@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AuditStandard | Surgical Precision in Financial Integrity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#515f74",
+                    "on-tertiary-fixed-variant": "#38485d",
+                    "on-secondary-container": "#57657b",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-container-highest": "#e0e3e5",
+                    "primary": "#000000",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e6e8ea",
+                    "on-surface": "#191c1e",
+                    "outline-variant": "#c6c6cd",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#000000",
+                    "surface-container": "#eceef0",
+                    "surface-tint": "#565e74",
+                    "on-surface-variant": "#45464d",
+                    "inverse-surface": "#2d3133",
+                    "tertiary-fixed-dim": "#b7c8e1",
+                    "tertiary-fixed": "#d3e4fe",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "secondary-container": "#d5e3fd",
+                    "surface-bright": "#f7f9fb",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "on-tertiary-container": "#75859d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#0b1c30",
+                    "on-primary-container": "#7c839b",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "tertiary-container": "#0b1c30",
+                    "primary-container": "#131b2e",
+                    "outline": "#76777d",
+                    "surface-container-low": "#f2f4f6",
+                    "secondary-fixed": "#d5e3fd",
+                    "surface-dim": "#d8dadc",
+                    "surface": "#f7f9fb",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e0e3e5",
+                    "background": "#f7f9fb",
+                    "primary-fixed": "#dae2fd",
+                    "error": "#ba1a1a",
+                    "on-background": "#191c1e",
+                    "inverse-primary": "#bec6e0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "lg": "24px",
+                    "xs": "4px",
+                    "sm": "8px",
+                    "base": "8px",
+                    "xxl": "64px",
+                    "xl": "40px",
+                    "gutter": "24px",
+                    "md": "16px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-xl-mobile": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                    "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                    "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                    "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                    "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                    "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+                    "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                    "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                    "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f7f9fb;
+            color: #191c1e;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md bg-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
+<div class="flex items-center gap-sm">
+<img alt="AuditStandard Logo" class="w-8 h-8 object-contain" src="data:image/png;base64,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"/>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">AuditStandard</span>
+</div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-lg py-sm font-label-lg rounded hover:opacity-90 transition-all duration-200">
+                Get a Consultation
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[85vh] flex items-center pt-xxl bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLB_xk2ApGTv86iQ7dW_IprtvhSEh50jmpEXScyEqVc2qWTLujndVh1I3m3tE_3ffkq4nfiRERpgphNLTUUJdbNFTt0zVHg0ZI8Rx-TWixW472LTiNv8NsXEJuadfIOA_NFAXhw68RPQreVIE-ReG6C1969NsZIv0ykJQduFqlxuO2ONL8H6AG941uWN-DX9dLFJZm4wMJc_LcoLzcMPSPHIRjD2GHAj8fkBzCYaEYpvGee1o2XXPziVFVL4BSL08d9czMkC6i8D5K');">
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+<div class="relative w-full max-w-container-max mx-auto px-lg">
+<div class="max-w-2xl text-on-primary">
+<h1 class="font-headline-xl text-headline-xl md:text-headline-xl mb-md">
+                    Surgical Precision in <br/>Financial Integrity
+                </h1>
+<p class="font-body-lg text-body-lg mb-xl opacity-90 max-w-lg">
+                    Empowering your business with high-stakes auditing and strategic advisory through institutional expertise and clarity.
+                </p>
+<div class="flex gap-md">
+<button class="bg-on-primary text-primary px-xl py-md font-label-lg rounded hover:bg-surface-container transition-all">
+                        View Our Capability
+                    </button>
+<button class="border border-on-primary text-on-primary px-xl py-md font-label-lg rounded hover:bg-on-primary/10 transition-all">
+                        Learn More
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Core Pillars Section -->
+<section class="py-xxl bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-lg">
+<div class="mb-xl">
+<span class="text-secondary font-label-sm uppercase tracking-widest">Our DNA</span>
+<h2 class="font-headline-lg text-headline-lg mt-xs">Our Core Pillars</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="bg-surface p-xl border border-outline-variant hover:border-primary transition-colors group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high mb-md group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">balance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm">Independence</h3>
+<p class="text-secondary font-body-md">Maintaining objective distance to ensure zero-compromise reporting and unwavering ethical standards in every engagement.</p>
+</div>
+<div class="bg-surface p-xl border border-outline-variant hover:border-primary transition-colors group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high mb-md group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">biotech</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm">Rigor</h3>
+<p class="text-secondary font-body-md">Utilizing deep-dive analytics and surgical scrutiny to uncover latent risks before they manifest into structural liabilities.</p>
+</div>
+<div class="bg-surface p-xl border border-outline-variant hover:border-primary transition-colors group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high mb-md group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-sm">Foresight</h3>
+<p class="text-secondary font-body-md">Translating historical data into actionable intelligence, preparing your enterprise for the shifting global regulatory landscape.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Overview -->
+<section class="py-xxl">
+<div class="max-w-container-max mx-auto px-lg">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-4">
+<span class="text-secondary font-label-sm uppercase tracking-widest">Strategic Expertise</span>
+<h2 class="font-headline-lg text-headline-lg mt-xs mb-md">Specialized Auditing Services</h2>
+<p class="text-secondary font-body-md mb-xl">Our multidisciplinary teams provide comprehensive oversight, ensuring every financial pillar of your organization is fortified against complexity and change.</p>
+<a class="inline-flex items-center gap-sm text-primary font-label-lg group" href="#">
+                        Explore Full Service Menu
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="bg-surface border border-outline-variant p-lg">
+<h4 class="font-headline-sm text-headline-sm mb-xs">Internal Audit</h4>
+<p class="text-secondary font-body-sm">In-depth internal controls assessment and operational optimization to drive efficiency and transparency.</p>
+</div>
+<div class="bg-surface border border-outline-variant p-lg">
+<h4 class="font-headline-sm text-headline-sm mb-xs">Risk Management</h4>
+<p class="text-secondary font-body-sm">Quantifying institutional exposure and designing robust frameworks for strategic resilience.</p>
+</div>
+<div class="bg-surface border border-outline-variant p-lg col-span-1 md:col-span-2">
+<h4 class="font-headline-sm text-headline-sm mb-xs">Financial Compliance</h4>
+<p class="text-secondary font-body-sm">Navigating global regulatory standards with absolute precision, from SEC filings to international statutory reporting.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-xxl bg-primary text-on-primary overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover grayscale" data-alt="A macro shot of a sophisticated architectural structure with clean lines and geometric shadows, evoking a sense of structure, strength, and corporate permanence. The image is rendered in high contrast black and white to emphasize the rigid, orderly design of modern financial institutions. The mood is powerful, professional, and suggests a deep foundation of trust and stability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLq7oxLopsecrU5J2b2HaABAudbSkTqWDK_Uem4e9rT5w6uEKLsi92reopErBSel6Z8hwpKzYljMf2xjDUJY7FmrNt9WbkKWU_JflSxIwu2fwo5i3lBmTrl1jjMo3aGMFlxgTkDqvIv5t8JDic_SehEYg33MSZZcA2h7JUhquN3b_fY4446VtWTR78gpPygrY86nchRO0zIgJF8qTqgZkKxV-AJoNpQZFzSKSIpga1LyoYvnMBHhPF3eUTMZtnyAN6gLAKzT3TOYZz"/>
+</div>
+<div class="max-w-container-max mx-auto px-lg relative z-10">
+<div class="max-w-xl">
+<h2 class="font-headline-lg text-headline-lg mb-xl">Auditing for the World's Leading Institutions</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-xl opacity-60">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-4xl">account_balance</span>
+<span class="font-label-lg">Federal Reserve</span>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-4xl">corporate_fare</span>
+<span class="font-label-lg">Global Equities</span>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-4xl">domain</span>
+<span class="font-label-lg">Atlas Ventures</span>
+</div>
+</div>
+<div class="mt-xl pt-xl border-t border-on-primary/20">
+<p class="font-body-lg text-body-lg italic">"AuditStandard provides the surgical clarity we need to operate in high-volatility markets with complete confidence."</p>
+<p class="mt-md font-label-lg">— Chief Financial Officer, Global Equities Group</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter w-full px-lg py-xxl max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="flex items-center gap-sm mb-md">
+<img alt="AuditStandard Logo" class="w-6 h-6 object-contain" src="data:image/png;base64,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"/>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">AuditStandard</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+                    © 2024 AuditStandard. All rights reserved. Institutional expertise and surgical clarity in financial auditing.
+                </p>
+</div>
+<div>
+<h5 class="font-label-lg mb-md">Office Addresses</h5>
+<ul class="space-y-sm font-body-sm text-secondary">
+<li>Wall Street 44, New York, NY</li>
+<li>Canary Wharf 12, London</li>
+<li>Marina Bay, Singapore</li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg mb-md">Quick Links</h5>
+<ul class="space-y-sm">
+<li><a class="font-body-sm text-secondary hover:text-primary transition-colors" href="#">Case Studies</a></li>
+<li><a class="font-body-sm text-secondary hover:text-primary transition-colors" href="#">Client Portal</a></li>
+<li><a class="font-body-sm text-secondary hover:text-primary transition-colors" href="#">Career Opportunities</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-lg mb-md">Newsletter</h5>
+<p class="font-body-sm text-secondary mb-md">Receive quarterly insights on global regulatory shifts.</p>
+<div class="flex">
+<input class="bg-surface border border-outline-variant px-md py-sm w-full text-body-sm focus:border-primary focus:ring-0 outline-none" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-md py-sm font-label-md">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-lg py-md border-t border-outline-variant flex justify-between">
+<a class="text-secondary font-body-sm hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<div class="flex gap-md">
+<span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer">public</span>
+<span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer">shield</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for scroll effects
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+
+        // Hover effect for cards
+        document.querySelectorAll('.group').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                el.style.transform = 'translateY(-4px)';
+                el.style.transition = 'all 0.3s ease';
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body></html>
