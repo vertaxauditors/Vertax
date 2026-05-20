@@ -1,326 +1,561 @@
 <!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vertax Auditors | Surgical Precision in Financial Integrity</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AuditStandard | Surgical Precision in Financial Integrity</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "secondary": "#515f74",
-                    "on-tertiary-fixed-variant": "#38485d",
-                    "on-secondary-container": "#57657b",
-                    "on-primary-fixed": "#131b2e",
-                    "surface-container-highest": "#e0e3e5",
-                    "primary": "#000000",
-                    "on-tertiary": "#ffffff",
-                    "surface-container-high": "#e6e8ea",
-                    "on-surface": "#191c1e",
-                    "outline-variant": "#c6c6cd",
-                    "on-secondary": "#ffffff",
-                    "error-container": "#ffdad6",
-                    "tertiary": "#000000",
-                    "surface-container": "#eceef0",
-                    "surface-tint": "#565e74",
-                    "on-surface-variant": "#45464d",
-                    "inverse-surface": "#2d3133",
-                    "tertiary-fixed-dim": "#b7c8e1",
-                    "tertiary-fixed": "#d3e4fe",
-                    "inverse-on-surface": "#eff1f3",
-                    "on-secondary-fixed-variant": "#3a485c",
-                    "on-primary": "#ffffff",
-                    "on-primary-fixed-variant": "#3f465c",
-                    "secondary-container": "#d5e3fd",
-                    "surface-bright": "#f7f9fb",
-                    "on-error-container": "#93000a",
-                    "secondary-fixed-dim": "#b9c7e0",
-                    "on-tertiary-container": "#75859d",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary-fixed": "#0b1c30",
-                    "on-primary-container": "#7c839b",
-                    "primary-fixed-dim": "#bec6e0",
-                    "on-secondary-fixed": "#0d1c2f",
-                    "tertiary-container": "#0b1c30",
-                    "primary-container": "#131b2e",
-                    "outline": "#76777d",
-                    "surface-container-low": "#f2f4f6",
-                    "secondary-fixed": "#d5e3fd",
-                    "surface-dim": "#d8dadc",
-                    "surface": "#f7f9fb",
-                    "on-error": "#ffffff",
-                    "surface-variant": "#e0e3e5",
-                    "background": "#f7f9fb",
-                    "primary-fixed": "#dae2fd",
-                    "error": "#ba1a1a",
-                    "on-background": "#191c1e",
-                    "inverse-primary": "#bec6e0"
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0B111E", // Obsidian Dark Luxury
+                        "gold": "#D4AF37", // Pure Champagne Gold
+                        "gold-dim": "#AA882C",
+                        "secondary": "#576475",
+                        "surface": "#F9F9FB", // Premium Silk White
+                        "surface-container": "#F1F2F5",
+                        "surface-card": "#FFFFFF",
+                        "outline-variant": "#DCDFE4",
+                        "on-primary": "#FFFFFF"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px", // Sharp architectural premium edges
+                        "lg": "2px",
+                        "xl": "4px",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "container-max": "1200px",
+                        "lg": "32px",
+                        "xs": "6px",
+                        "sm": "12px",
+                        "base": "12px",
+                        "xxl": "88px",
+                        "xl": "48px",
+                        "gutter": "32px",
+                        "md": "20px"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cinzel', 'serif']
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "container-max": "1280px",
-                    "lg": "24px",
-                    "xs": "4px",
-                    "sm": "8px",
-                    "base": "8px",
-                    "xxl": "64px",
-                    "xl": "40px",
-                    "gutter": "24px",
-                    "md": "16px"
-            },
-            "fontFamily": {
-                    "headline-xl": ["Inter"],
-                    "body-lg": ["Inter"],
-                    "label-sm": ["Inter"],
-                    "headline-md": ["Inter"],
-                    "headline-sm": ["Inter"],
-                    "headline-lg": ["Inter"],
-                    "label-md": ["Inter"],
-                    "headline-xl-mobile": ["Inter"],
-                    "label-lg": ["Inter"],
-                    "body-sm": ["Inter"],
-                    "body-md": ["Inter"]
-            },
-            "fontSize": {
-                    "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                    "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-                    "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "700" }],
-                    "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                    "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
-                    "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-                    "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }],
-                    "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                    "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
-                    "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
-                    "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
-            }
-          },
-        },
-      }
+        }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
         }
         body {
-            background-color: #f7f9fb;
-            color: #191c1e;
+            background-color: #F9F9FB;
+            color: #0B111E;
+            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
         }
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 24px;
+        #menu-toggle:checked ~ #mobile-menu {
+            max-height: 400px;
+            opacity: 1;
+            visibility: visible;
+        }
+        .typed-cursor {
+            color: #D4AF37;
+            font-weight: 300;
+        }
+        /* Premium navigation links */
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: -6px;
+            left: 0;
+            background-color: #D4AF37;
+            transform-origin: bottom right;
+            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        /* Luxury Hover Cards Glow */
+        .luxury-card {
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .luxury-card:hover {
+            border-color: #D4AF37;
+            box-shadow: 0 20px 40px -15px rgba(11, 17, 30, 0.05);
+            transform: translateY(-4px);
+        }
+        /* Custom Premium Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B111E;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D4AF37;
+        }
+        /* Ambient Floating Animation */
+        @keyframes subtleFloat {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-premium {
+            animation: subtleFloat 4s ease-in-out infinite;
+        }
+        /* Dynamic Luxury Mask Overlay */
+        .luxury-mask::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(11,17,30,0.92) 0%, rgba(20,32,54,0.80) 100%);
         }
     </style>
 </head>
-<body class="font-body-md text-body-md bg-surface">
-<!-- TopNavBar -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-outline-variant">
-<div class="flex justify-between items-center w-full px-lg py-md max-w-container-max mx-auto">
-<div class="flex items-center gap-sm">
-<img alt="AuditStandard Logo" class="w-8 h-8 object-contain" src="data:image/png;base64,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"/>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">AuditStandard</span>
-</div>
-<div class="hidden md:flex gap-lg items-center">
-<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-200" href="#">Home</a>
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="#">Services</a>
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="#">About</a>
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors duration-200" href="#">Contact</a>
-</div>
-<button class="bg-primary text-on-primary px-lg py-sm font-label-lg rounded hover:opacity-90 transition-all duration-200">
-                Get a Consultation
+<body class="bg-surface pt-[80px]">
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-gold/10 transition-all duration-300" id="main-nav">
+    <div class="flex justify-between items-center w-full px-6 md:px-lg py-md max-w-container-max mx-auto relative">
+        
+        <a href="#home" class="flex items-center gap-3 cursor-pointer select-none group">
+            <div class="w-10 h-10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" class="w-full h-full transform duration-700 group-hover:scale-105">
+                    <path d='M10,12 L36,12 L50,68 L64,12 L90,12 L58,108 L42,108 Z' fill='#D4AF37'/>
+                    <path d='M25,80 C42,64 60,42 75,15 L81,23 C65,51 47,73 31,88 Z' fill='#F9F9FB'/>
+                    <path d='M64,13 L82,13 L82,31 Z' fill='#F9F9FB'/>
+                </svg>
+            </div>
+            <div class="flex flex-col tracking-[0.22em] leading-none uppercase">
+                <span class="font-serif text-sm font-semibold text-gold">Vertax</span>
+                <span class="font-sans text-[9px] text-white/50 tracking-[0.38em] mt-[3px]">Auditors</span>
+            </div>
+        </a>
+        
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+        <label for="menu-toggle" class="flex md:hidden cursor-pointer p-2 hover:bg-white/10 rounded select-none">
+            <span class="material-symbols-outlined text-gold">menu</span>
+        </label>
+
+        <div class="hidden md:flex gap-lg items-center">
+            <a class="font-sans text-xs uppercase tracking-widest text-gold border-b border-gold pb-1 transition-colors duration-200" href="#home">Home</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold transition-colors duration-200 nav-link" href="#pillars">Pillars</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold transition-colors duration-200 nav-link" href="#services">Services</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold transition-colors duration-200 nav-link" href="#locations">Locations</a>
+        </div>
+       
+        <div id="mobile-menu" class="absolute top-full left-0 right-0 max-h-0 opacity-0 visibility-hidden overflow-hidden bg-primary border-b border-gold/10 flex flex-col gap-md px-6 py-0 transition-all duration-300 ease-in-out md:hidden z-40 shadow-xl">
+            <a class="font-sans text-xs uppercase tracking-widest text-gold pt-4 pb-2 border-b border-white/5" href="#home">Home</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-white/70 py-2 border-b border-white/5" href="#pillars">Pillars</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-white/70 py-2 border-b border-white/5" href="#services">Services</a>
+            <a class="font-sans text-xs uppercase tracking-widest text-white/70 py-2 pb-4" href="#locations">Locations</a>
+            <button class="w-full bg-gold text-primary py-3 text-xs font-sans uppercase tracking-widest mb-4 hover:bg-gold-dim transition-all">
+                Request Briefing
             </button>
-</div>
+        </div>
+    </div>
 </nav>
-<!-- Hero Section -->
-<header class="relative min-h-[85vh] flex items-center pt-xxl bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCLB_xk2ApGTv86iQ7dW_IprtvhSEh50jmpEXScyEqVc2qWTLujndVh1I3m3tE_3ffkq4nfiRERpgphNLTUUJdbNFTt0zVHg0ZI8Rx-TWixW472LTiNv8NsXEJuadfIOA_NFAXhw68RPQreVIE-ReG6C1969NsZIv0ykJQduFqlxuO2ONL8H6AG941uWN-DX9dLFJZm4wMJc_LcoLzcMPSPHIRjD2GHAj8fkBzCYaEYpvGee1o2XXPziVFVL4BSL08d9czMkC6i8D5K');">
-<div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
-<div class="relative w-full max-w-container-max mx-auto px-lg">
-<div class="max-w-2xl text-on-primary">
-<h1 class="font-headline-xl text-headline-xl md:text-headline-xl mb-md">
-                    Surgical Precision in <br/>Financial Integrity
-                </h1>
-<p class="font-body-lg text-body-lg mb-xl opacity-90 max-w-lg">
-                    Empowering your business with high-stakes auditing and strategic advisory through institutional expertise and clarity.
-                </p>
-<div class="flex gap-md">
-<button class="bg-on-primary text-primary px-xl py-md font-label-lg rounded hover:bg-surface-container transition-all">
-                        View Our Capability
-                    </button>
-<button class="border border-on-primary text-on-primary px-xl py-md font-label-lg rounded hover:bg-on-primary/10 transition-all">
-                        Learn More
-                    </button>
-</div>
-</div>
-</div>
+
+<header id="home" class="luxury-mask relative min-h-[85vh] md:min-h-[95vh] flex items-center bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');">
+    <div class="absolute inset-0 z-10 opacity-30 pointer-events-none" id="hero-interactive-glow"></div>
+    
+    <div class="relative z-20 w-full max-w-container-max mx-auto px-6 md:px-lg py-12">
+        <div class="max-w-2xl text-on-primary" data-aos="fade-right" data-aos-duration="1200">
+            <span class="text-gold font-sans text-xs uppercase tracking-[0.3em] block mb-4" data-aos="fade-down" data-aos-delay="200">Your Perfect Business Partner</span>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-light leading-tight tracking-wide mb-md">
+                Surgical Precision <br class="hidden sm:inline"/> In 
+                <span id="typed-target" class="text-gold font-normal"></span>
+            </h1>
+            <p class="font-sans text-sm md:text-base font-light text-white/60 mb-xl max-w-lg mt-6 leading-relaxed border-l border-gold/20 pl-4">
+                At Vertax Auditors, we provide comprehensive audit, assurance, tax, and advisory services to help your business grow with confidence.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-md">
+                <button class="float-premium bg-gold text-primary hover:bg-white hover:text-primary px-10 py-4 text-xs font-sans uppercase tracking-widest font-semibold transition-all duration-300 shadow-xl">
+                    View System Capability
+                </button>
+                <button class="border border-white/20 text-on-primary hover:border-gold hover:text-gold px-10 py-4 text-xs font-sans uppercase tracking-widest transition-all duration-300">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </div>
 </header>
-<!-- Core Pillars Section -->
-<section class="py-xxl bg-surface-container-low">
-<div class="max-w-container-max mx-auto px-lg">
-<div class="mb-xl">
-<span class="text-secondary font-label-sm uppercase tracking-widest">Our DNA</span>
-<h2 class="font-headline-lg text-headline-lg mt-xs">Our Core Pillars</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
-<div class="bg-surface p-xl border border-outline-variant hover:border-primary transition-colors group">
-<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high mb-md group-hover:bg-primary group-hover:text-on-primary transition-all">
-<span class="material-symbols-outlined">balance</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Independence</h3>
-<p class="text-secondary font-body-md">Maintaining objective distance to ensure zero-compromise reporting and unwavering ethical standards in every engagement.</p>
-</div>
-<div class="bg-surface p-xl border border-outline-variant hover:border-primary transition-colors group">
-<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high mb-md group-hover:bg-primary group-hover:text-on-primary transition-all">
-<span class="material-symbols-outlined">biotech</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Rigor</h3>
-<p class="text-secondary font-body-md">Utilizing deep-dive analytics and surgical scrutiny to uncover latent risks before they manifest into structural liabilities.</p>
-</div>
-<div class="bg-surface p-xl border border-outline-variant hover:border-primary transition-colors group">
-<div class="w-12 h-12 flex items-center justify-center bg-surface-container-high mb-md group-hover:bg-primary group-hover:text-on-primary transition-all">
-<span class="material-symbols-outlined">visibility</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm mb-sm">Foresight</h3>
-<p class="text-secondary font-body-md">Translating historical data into actionable intelligence, preparing your enterprise for the shifting global regulatory landscape.</p>
-</div>
-</div>
-</div>
+
+<section id="pillars" class="py-24 md:py-xxl bg-surface-container overflow-hidden relative">
+    <div class="max-w-container-max mx-auto px-6 md:px-lg">
+        <div class="mb-xl text-center" data-aos="fade-up">
+            <span class="text-secondary font-sans text-xs uppercase tracking-[0.25em] block mb-2">Our Creed</span>
+            <h2 class="font-serif text-3xl md:text-4xl font-light tracking-wide text-primary">Foundational Pillars</h2>
+            <div class="w-12 h-[1px] bg-gold mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-md md:gap-lg">
+            <div class="luxury-card bg-surface-card p-xl border border-outline-variant/60 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-10 h-10 flex items-center justify-center bg-primary text-gold border border-gold/20 mb-md transition-colors duration-300">
+                    <span class="material-symbols-outlined">balance</span>
+                </div>
+                <h3 class="font-serif text-lg tracking-wide mb-sm text-primary">Independence</h3>
+                <p class="text-secondary font-sans text-sm font-light leading-relaxed">Maintaining rigorous objective distance to ensure zero-compromise reporting parameters and unwavering ethical benchmarks.</p>
+            </div>
+            
+            <div class="luxury-card bg-surface-card p-xl border border-outline-variant/60 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-10 h-10 flex items-center justify-center bg-primary text-gold border border-gold/20 mb-md transition-colors duration-300">
+                    <span class="material-symbols-outlined">biotech</span>
+                </div>
+                <h3 class="font-serif text-lg tracking-wide mb-sm text-primary">Forensic Rigor</h3>
+                <p class="text-secondary font-sans text-sm font-light leading-relaxed">Utilizing micro-level deep data analytics and surgical architecture scrutiny to uncover corporate exposure matrices early.</p>
+            </div>
+            
+            <div class="luxury-card bg-surface-card p-xl border border-outline-variant/60 shadow-sm sm:col-span-2 md:col-span-1" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-10 h-10 flex items-center justify-center bg-primary text-gold border border-gold/20 mb-md transition-colors duration-300">
+                    <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <h3 class="font-serif text-lg tracking-wide mb-sm text-primary">Sovereign Foresight</h3>
+                <p class="text-secondary font-sans text-sm font-light leading-relaxed">Translating legacy transactional metadata into active enterprise defenses against fluid global legislative dynamics.</p>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- Services Overview -->
-<section class="py-xxl">
-<div class="max-w-container-max mx-auto px-lg">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
-<div class="md:col-span-4">
-<span class="text-secondary font-label-sm uppercase tracking-widest">Strategic Expertise</span>
-<h2 class="font-headline-lg text-headline-lg mt-xs mb-md">Specialized Auditing Services</h2>
-<p class="text-secondary font-body-md mb-xl">Our multidisciplinary teams provide comprehensive oversight, ensuring every financial pillar of your organization is fortified against complexity and change.</p>
-<a class="inline-flex items-center gap-sm text-primary font-label-lg group" href="#">
-                        Explore Full Service Menu
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-md">
-<div class="bg-surface border border-outline-variant p-lg">
-<h4 class="font-headline-sm text-headline-sm mb-xs">Internal Audit</h4>
-<p class="text-secondary font-body-sm">In-depth internal controls assessment and operational optimization to drive efficiency and transparency.</p>
-</div>
-<div class="bg-surface border border-outline-variant p-lg">
-<h4 class="font-headline-sm text-headline-sm mb-xs">Risk Management</h4>
-<p class="text-secondary font-body-sm">Quantifying institutional exposure and designing robust frameworks for strategic resilience.</p>
-</div>
-<div class="bg-surface border border-outline-variant p-lg col-span-1 md:col-span-2">
-<h4 class="font-headline-sm text-headline-sm mb-xs">Financial Compliance</h4>
-<p class="text-secondary font-body-sm">Navigating global regulatory standards with absolute precision, from SEC filings to international statutory reporting.</p>
-</div>
-</div>
-</div>
-</div>
+
+<section id="services" class="py-24 md:py-xxl bg-surface">
+    <div class="max-w-container-max mx-auto px-6 md:px-lg">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-gutter items-center">
+            <div class="md:col-span-4 text-left mb-8 md:mb-0" data-aos="fade-right">
+                <span class="text-secondary font-sans text-xs uppercase tracking-[0.25em] block mb-2">Capabilities Registry</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-primary font-light tracking-wide mb-md leading-tight">Our Specialized Corporate Services</h2>
+                <p class="text-secondary font-sans text-sm font-light mb-xl leading-relaxed">Providing high-stakes data architecture compliance, legal fortification, and financial advisory blueprints tailored for business growth.</p>
+                <a class="inline-flex items-center gap-sm text-primary font-sans text-xs uppercase tracking-widest font-semibold border-b border-primary pb-1 hover:text-gold hover:border-gold transition-all" href="#">
+                    Explore Full Service Menu
+                    <span class="material-symbols-outlined group-hover:translate-x-1.5 transition-transform duration-300">arrow_forward</span>
+                </a>
+            </div>
+            
+            <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-md" data-aos="fade-left">
+                <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
+                    <div class="flex items-center gap-md mb-md">
+                        <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">receipt_long</span>
+                        <h4 class="font-serif text-md tracking-wide text-primary font-semibold">GST Registration & Filing</h4>
+                    </div>
+                    <p class="text-secondary font-sans text-xs font-light leading-relaxed">Hassle-free GST registration, financial data filing, and continuous corporate tax compliance management.</p>
+                </div>
+                
+                <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
+                    <div class="flex items-center gap-md mb-md">
+                        <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">draw</span>
+                        <h4 class="font-serif text-md tracking-wide text-primary font-semibold">Digital Signature</h4>
+                    </div>
+                    <p class="text-secondary font-sans text-xs font-light leading-relaxed">Get your professional and authenticated Digital Signature Certificate configured quickly and securely.</p>
+                </div>
+                
+                <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
+                    <div class="flex items-center gap-md mb-md">
+                        <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">corporate_fare</span>
+                        <h4 class="font-serif text-md tracking-wide text-primary font-semibold">LLP / Company Incorporation</h4>
+                    </div>
+                    <p class="text-secondary font-sans text-xs font-light leading-relaxed">End-to-end procedural support for structured LLP and Private Limited Company operational configuration.</p>
+                </div>
+
+                <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
+                    <div class="flex items-center gap-md mb-md">
+                        <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">handshake</span>
+                        <h4 class="font-serif text-md tracking-wide text-primary font-semibold">Partnership</h4>
+                    </div>
+                    <p class="text-secondary font-sans text-xs font-light leading-relaxed">Meticulous partnership firm registration architecture along with ongoing core compliance updates.</p>
+                </div>
+
+                <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
+                    <div class="flex items-center gap-md mb-md">
+                        <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">verified_user</span>
+                        <h4 class="font-serif text-md tracking-wide text-primary font-semibold">FSSAI & Trademark</h4>
+                    </div>
+                    <p class="text-secondary font-sans text-xs font-light leading-relaxed">Strategic sovereign corporate FSSAI processing registration alongside protective Trademark filing assistance.</p>
+                </div>
+
+                <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
+                    <div class="flex items-center gap-md mb-md">
+                        <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">description</span>
+                        <h4 class="font-serif text-md tracking-wide text-primary font-semibold">Agreements</h4>
+                    </div>
+                    <p class="text-secondary font-sans text-xs font-light leading-relaxed">Professional structural drafting and continuous oversight review of all varieties of corporate legal agreements.</p>
+                </div>
+
+                <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
+                    <div class="flex items-center gap-md mb-md">
+                        <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">badge</span>
+                        <h4 class="font-serif text-md tracking-wide text-primary font-semibold">EPF / ESI</h4>
+                    </div>
+                    <p class="text-secondary font-sans text-xs font-light leading-relaxed">EPF & ESI corporate baseline system registration together with structural compliance management.</p>
+                </div>
+
+                <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
+                    <div class="flex items-center gap-md mb-md">
+                        <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">account_balance_wallet</span>
+                        <h4 class="font-serif text-md tracking-wide text-primary font-semibold">TDS & ITR</h4>
+                    </div>
+                    <p class="text-secondary font-sans text-xs font-light leading-relaxed">Rigorous systematic TDS compliance management along with accurate enterprise Income Tax Return filing services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- Trust Section -->
-<section class="py-xxl bg-primary text-on-primary overflow-hidden relative">
-<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
-<img class="w-full h-full object-cover grayscale" data-alt="A macro shot of a sophisticated architectural structure with clean lines and geometric shadows, evoking a sense of structure, strength, and corporate permanence. The image is rendered in high contrast black and white to emphasize the rigid, orderly design of modern financial institutions. The mood is powerful, professional, and suggests a deep foundation of trust and stability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLq7oxLopsecrU5J2b2HaABAudbSkTqWDK_Uem4e9rT5w6uEKLsi92reopErBSel6Z8hwpKzYljMf2xjDUJY7FmrNt9WbkKWU_JflSxIwu2fwo5i3lBmTrl1jjMo3aGMFlxgTkDqvIv5t8JDic_SehEYg33MSZZcA2h7JUhquN3b_fY4446VtWTR78gpPygrY86nchRO0zIgJF8qTqgZkKxV-AJoNpQZFzSKSIpga1LyoYvnMBHhPF3eUTMZtnyAN6gLAKzT3TOYZz"/>
-</div>
-<div class="max-w-container-max mx-auto px-lg relative z-10">
-<div class="max-w-xl">
-<h2 class="font-headline-lg text-headline-lg mb-xl">Auditing for the World's Leading Institutions</h2>
-<div class="grid grid-cols-2 md:grid-cols-3 gap-xl opacity-60">
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-4xl">account_balance</span>
-<span class="font-label-lg">Federal Reserve</span>
-</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-4xl">corporate_fare</span>
-<span class="font-label-lg">Global Equities</span>
-</div>
-<div class="flex items-center gap-sm">
-<span class="material-symbols-outlined text-4xl">domain</span>
-<span class="font-label-lg">Atlas Ventures</span>
-</div>
-</div>
-<div class="mt-xl pt-xl border-t border-on-primary/20">
-<p class="font-body-lg text-body-lg italic">"AuditStandard provides the surgical clarity we need to operate in high-volatility markets with complete confidence."</p>
-<p class="mt-md font-label-lg">— Chief Financial Officer, Global Equities Group</p>
-</div>
-</div>
-</div>
+
+<section id="locations" class="py-24 md:py-xxl bg-surface-container border-t border-outline-variant/30">
+    <div class="max-w-container-max mx-auto px-6 md:px-lg">
+        <div class="mb-xl text-center" data-aos="fade-up">
+            <span class="text-secondary font-sans text-xs uppercase tracking-[0.25em] block mb-2">Global Anchor Network</span>
+            <h2 class="font-serif text-3xl md:text-4xl font-light tracking-wide text-primary">Institutional Hubs</h2>
+            <div class="w-12 h-[1px] bg-gold mx-auto mt-4"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-lg">
+            
+            <div class="luxury-card bg-surface-card border border-outline-variant/60 overflow-hidden group shadow-sm relative" data-aos="flip-left" data-aos-delay="100">
+                <div class="w-full h-48 bg-primary/10 relative overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.221990129033!2d-74.011014323417!3d40.7076756375334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4m3!3m2!1m1!2b1!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        class="w-full h-full border-0 grayscale contrast-125 brightness-90 opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="p-xl relative">
+                    <span class="text-secondary font-sans text-xs tracking-wider block mb-sm uppercase">Americas Region</span>
+                    <h4 class="font-serif text-xl font-light text-primary mb-md">New York</h4>
+                    <p class="text-secondary font-sans text-xs font-light mb-lg leading-relaxed">Wall Street 44, Suite 1200<br/>New York, NY 10005</p>
+                    <div class="flex items-center gap-xs text-primary font-sans text-xs uppercase tracking-widest font-semibold group-hover:text-gold transition-colors cursor-pointer">
+                        <span>Contact Operations Hub</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="luxury-card bg-surface-card border border-outline-variant/60 overflow-hidden group shadow-sm relative" data-aos="flip-left" data-aos-delay="200">
+                <div class="w-full h-48 bg-primary/10 relative overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9079361113264!2d-0.02157742337777176!3d51.50577901015694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4m3!3m2!1m1!2b1!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" 
+                        class="w-full h-full border-0 grayscale contrast-125 brightness-90 opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="p-xl relative">
+                    <span class="text-secondary font-sans text-xs tracking-wider block mb-sm uppercase">EMEA Region</span>
+                    <h4 class="font-serif text-xl font-light text-primary mb-md">London</h4>
+                    <p class="text-secondary font-sans text-xs font-light mb-lg leading-relaxed">Canary Wharf 12, Tower Level 4<br/>London, E14 5HD</p>
+                    <div class="flex items-center gap-xs text-primary font-sans text-xs uppercase tracking-widest font-semibold group-hover:text-gold transition-colors cursor-pointer">
+                        <span>Contact Operations Hub</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="luxury-card bg-surface-card border border-outline-variant/60 overflow-hidden group shadow-sm relative sm:col-span-2 md:col-span-1" data-aos="flip-left" data-aos-delay="300">
+                <div class="w-full h-48 bg-primary/10 relative overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8199178128336!2d103.85627707567843!3d1.281816561783852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4m3!3m2!1m1!2b1!5e0!3m2!1sen!2ssg!4v1700000000000!5m2!1sen!2ssg" 
+                        class="w-full h-full border-0 grayscale contrast-125 brightness-90 opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="p-xl relative">
+                    <span class="text-secondary font-sans text-xs tracking-wider block mb-sm uppercase">APAC Region</span>
+                    <h4 class="font-serif text-xl font-light text-primary mb-md">Singapore</h4>
+                    <p class="text-secondary font-sans text-xs font-light mb-lg leading-relaxed">Marina Bay Sands Centre, Tower 3<br/>Singapore, 018956</p>
+                    <div class="flex items-center gap-xs text-primary font-sans text-xs uppercase tracking-widest font-semibold group-hover:text-gold transition-colors cursor-pointer">
+                        <span>Contact Operations Hub</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </section>
-<!-- Footer -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter w-full px-lg py-xxl max-w-container-max mx-auto">
-<div class="md:col-span-1">
-<div class="flex items-center gap-sm mb-md">
-<img alt="AuditStandard Logo" class="w-6 h-6 object-contain" src="data:image/png;base64,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"/>
-<span class="font-headline-sm text-headline-sm font-bold text-primary">AuditStandard</span>
-</div>
-<p class="font-body-sm text-body-sm text-secondary">
-                    © 2024 AuditStandard. All rights reserved. Institutional expertise and surgical clarity in financial auditing.
-                </p>
-</div>
-<div>
-<h5 class="font-label-lg mb-md">Office Addresses</h5>
-<ul class="space-y-sm font-body-sm text-secondary">
-<li>Wall Street 44, New York, NY</li>
-<li>Canary Wharf 12, London</li>
-<li>Marina Bay, Singapore</li>
-</ul>
-</div>
-<div>
-<h5 class="font-label-lg mb-md">Quick Links</h5>
-<ul class="space-y-sm">
-<li><a class="font-body-sm text-secondary hover:text-primary transition-colors" href="#">Case Studies</a></li>
-<li><a class="font-body-sm text-secondary hover:text-primary transition-colors" href="#">Client Portal</a></li>
-<li><a class="font-body-sm text-secondary hover:text-primary transition-colors" href="#">Career Opportunities</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-label-lg mb-md">Newsletter</h5>
-<p class="font-body-sm text-secondary mb-md">Receive quarterly insights on global regulatory shifts.</p>
-<div class="flex">
-<input class="bg-surface border border-outline-variant px-md py-sm w-full text-body-sm focus:border-primary focus:ring-0 outline-none" placeholder="Email Address" type="email"/>
-<button class="bg-primary text-on-primary px-md py-sm font-label-md">Join</button>
-</div>
-</div>
-</div>
-<div class="max-w-container-max mx-auto px-lg py-md border-t border-outline-variant flex justify-between">
-<a class="text-secondary font-body-sm hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<div class="flex gap-md">
-<span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer">public</span>
-<span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer">shield</span>
-</div>
-</div>
+
+<section class="py-24 bg-primary text-on-primary overflow-hidden relative border-t border-b border-gold/10">
+    <div class="absolute right-0 top-0 w-1/3 h-full opacity-[0.03] pointer-events-none hidden md:block">
+        <img class="w-full h-full object-cover grayscale" alt="Sophisticated landscape architectural wire asset" src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80"/>
+    </div>
+    <div class="max-w-container-max mx-auto px-6 md:px-lg relative z-10">
+        <div class="w-full">
+            <h2 class="font-serif text-2xl md:text-3xl font-light tracking-wide mb-xl text-center md:text-left" data-aos="fade-up">Why Choose Vertax Auditors?</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-lg opacity-85 text-xs font-sans" data-aos="fade-up" data-aos-delay="150">
+                <div class="flex flex-col gap-sm border-t border-gold/20 pt-4">
+                    <div class="flex items-center gap-sm text-gold font-medium uppercase tracking-widest">
+                        <span class="material-symbols-outlined text-2xl">shield</span>
+                        <span>Expertise</span>
+                    </div>
+                    <p class="text-white/60 font-light mt-1">Experienced professionals with deep industry knowledge.</p>
+                </div>
+                <div class="flex flex-col gap-sm border-t border-gold/20 pt-4">
+                    <div class="flex items-center gap-sm text-gold font-medium uppercase tracking-widest">
+                        <span class="material-symbols-outlined text-2xl">track_changes</span>
+                        <span>Accuracy</span>
+                    </div>
+                    <p class="text-white/60 font-light mt-1">Uncompromising metric commitment to precision and system quality.</p>
+                </div>
+                <div class="flex flex-col gap-sm border-t border-gold/20 pt-4">
+                    <div class="flex items-center gap-sm text-gold font-medium uppercase tracking-widest">
+                        <span class="material-symbols-outlined text-2xl">handshake</span>
+                        <span>Integrity</span>
+                    </div>
+                    <p class="text-white/60 font-light mt-1">Upholding the highest professional standards of ethics and data transparency.</p>
+                </div>
+                <div class="flex flex-col gap-sm border-t border-gold/20 pt-4">
+                    <div class="flex items-center gap-sm text-gold font-medium uppercase tracking-widest">
+                        <span class="material-symbols-outlined text-2xl">groups</span>
+                        <span>Client Focus</span>
+                    </div>
+                    <p class="text-white/60 font-light mt-1">Tailored operational solutions explicitly designed around your unique business needs.</p>
+                </div>
+            </div>
+
+            <div class="mt-xl pt-xl border-t border-gold/10 text-left" data-aos="fade-up" data-aos-delay="300">
+                <p class="font-serif text-lg md:text-xl italic font-light text-white/80 leading-relaxed">"Vertax Auditors provides the structural precision and surgical transparency required to run assets across highly volatile financial updates with absolute clarity."</p>
+                <p class="mt-md font-sans text-xs uppercase tracking-widest text-gold">— Managing Chief Officer, Global Corporate Finance</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-primary text-white/80 font-sans border-t border-gold/5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-gutter w-full px-6 md:px-lg py-16 max-w-container-max mx-auto text-xs font-light">
+        <div class="sm:col-span-2 md:col-span-1">
+            <div class="flex items-center gap-sm mb-md text-on-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" class="w-6 h-6">
+                    <path d='M10,12 L36,12 L50,68 L64,12 L90,12 L58,108 L42,108 Z' fill='#D4AF37'/>
+                    <path d='M25,80 C42,64 60,42 75,15 L81,23 C65,51 47,73 31,88 Z' fill='#F9F9FB'/>
+                    <path d='M64,13 L82,13 L82,31 Z' fill='#F9F9FB'/>
+                </svg>
+                <span class="font-serif tracking-[0.25em] text-xs font-semibold uppercase text-gold ml-2">Vertax</span>
+            </div>
+            <p class="text-white/40 leading-relaxed">
+                © 2026 Vertax Auditors. All rights reserved. Institutional global metrics and absolute clarity in strategic risk management. Pure fidelity encryption active.
+            </p>
+        </div>
+        
+        <div>
+            <h5 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-md">Office Layout Links</h5>
+            <ul class="space-y-sm text-white/50">
+                <li class="hover:text-gold transition-colors cursor-pointer">Wall Street 44, New York</li>
+                <li class="hover:text-gold transition-colors cursor-pointer">Canary Wharf 12, London</li>
+                <li class="hover:text-gold transition-colors cursor-pointer">Marina Bay Sands, Singapore</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h5 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-md">Quick Links</h5>
+            <ul class="space-y-sm">
+                <li><a class="text-white/50 hover:text-gold transition-colors" href="#">Case Matrix Studies</a></li>
+                <li><a class="text-white/50 hover:text-gold transition-colors" href="#">Client Secure Portal</a></li>
+                <li><a class="text-white/50 hover:text-gold transition-colors" href="#">Career Opportunities</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h5 class="font-sans text-xs font-semibold uppercase tracking-widest text-gold mb-md">Advisory Intelligence</h5>
+            <p class="text-white/50 mb-md leading-relaxed">Quarterly technical insights on statutory global compliance changes.</p>
+            <div class="flex border border-white/10 p-[1px] bg-[#121A28]">
+                <input class="bg-transparent border-0 px-md py-sm w-full text-white placeholder-white/20 focus:ring-0 outline-none" placeholder="Corporate Email Address" type="email"/>
+                <button class="bg-gold text-primary px-lg py-sm font-sans font-semibold uppercase tracking-widest hover:bg-white transition-colors">Join</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="max-w-container-max mx-auto px-6 py-md border-t border-white/5 flex justify-between items-center flex-col sm:flex-row gap-4 text-[10px] uppercase tracking-widest text-white/30">
+        <a class="hover:text-gold transition-colors" href="#">Privacy Framework Policy</a>
+        <div class="flex gap-md">
+            <span class="material-symbols-outlined text-sm hover:text-gold cursor-pointer transition-colors">public</span>
+            <span class="material-symbols-outlined text-sm hover:text-gold cursor-pointer transition-colors">shield</span>
+        </div>
+    </div>
 </footer>
+
+<div class="fixed bottom-6 right-6 z-50 group">
+    <span class="absolute -top-1 -right-1 flex h-3 w-3 z-10">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
+    </span>
+    <a href="https://wa.me/919567427563" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-primary text-on-primary border border-gold pl-4 pr-5 py-3 shadow-2xl hover:bg-gold hover:text-primary transition-all duration-300 group">
+        <div class="text-xl flex items-center justify-center text-gold group-hover:text-primary transition-colors">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="flex flex-col items-start leading-none">
+            <span class="text-[9px] uppercase tracking-widest opacity-60 font-medium">Private Concierge</span>
+            <span class="text-xs font-serif font-bold tracking-wide mt-[2px]">Chat Operations</span>
+        </div>
+    </a>
+</div>
+
 <script>
-        // Simple micro-interaction for scroll effects
+    window.addEventListener('DOMContentLoaded', () => {
+        // Init Premium Animate On Scroll Engine
+        AOS.init({
+            duration: 1200,
+            easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
+            once: true,
+            mirror: false
+        });
+
+        // Dynamic typing diagnostic loop strings
+        new Typed('#typed-target', {
+            strings: ['Financial Integrity.', 'Regulatory Compliance.', 'Strategic Corporate Growth.'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 2500,
+            loop: true
+        });
+
+        // Dynamic Navbar transparency transformation on view scroll vector changes
         window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('shadow-sm');
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 40) {
+                nav.classList.add('py-2', 'shadow-xl', 'bg-primary/95', 'backdrop-blur-md');
             } else {
-                nav.classList.remove('shadow-sm');
+                nav.classList.remove('py-2', 'shadow-xl', 'bg-primary/95', 'backdrop-blur-md');
             }
         });
 
-        // Hover effect for cards
-        document.querySelectorAll('.group').forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                el.style.transform = 'translateY(-4px)';
-                el.style.transition = 'all 0.3s ease';
+        // Luxury Mouse Pointer Ambient Glow Effect (Hero Section Mask Layer Tracking)
+        const heroSection = document.getElementById('home');
+        const glowContainer = document.getElementById('hero-interactive-glow');
+        
+        if(heroSection && glowContainer) {
+            heroSection.addEventListener('mousemove', (e) => {
+                const rect = heroSection.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                glowContainer.style.background = `radial-gradient(circle 220px at ${x}px ${y}px, rgba(212, 175, 55, 0.08), transparent 80%)`;
             });
-            el.addEventListener('mouseleave', () => {
-                el.style.transform = 'translateY(0)';
+            heroSection.addEventListener('mouseleave', () => {
+                glowContainer.style.background = 'none';
             });
-        });
-    </script>
-</body></html>
+        }
+    });
+</script>
+</body>
+</html>
