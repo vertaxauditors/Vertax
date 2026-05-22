@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="light scroll-smooth" lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Vertax Auditors | Surgical Precision in Financial Integrity</title>
+    <title>Vertax Advisory | Surgical Precision in Financial Integrity</title>
     
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght=400;600;700&family=Inter:wght=300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -20,36 +20,33 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#0B111E", // Obsidian Dark Luxury
-                        "gold": "#D4AF37", // Pure Champagne Gold
-                        "gold-dim": "#AA882C",
-                        "secondary": "#576475",
-                        "surface": "#F9F9FB", // Premium Silk White
-                        "surface-container": "#F1F2F5",
+                        "primary": "#4F46E5", // Modern Indigo Accent
+                        "brand-dark": "#0F172A", // Slate 900 for modern deep contrast texts
+                        "brand-gray": "#64748B", // Slate 500 secondary
+                        "surface": "#F8FAFC", // Clean Crisp Canvas Studio White
                         "surface-card": "#FFFFFF",
-                        "outline-variant": "#DCDFE4",
-                        "on-primary": "#FFFFFF"
+                        "accent-glow": "rgba(99, 102, 241, 0.04)"
                     },
                     borderRadius: {
-                        "DEFAULT": "0px", // Sharp architectural premium edges
-                        "lg": "2px",
-                        "xl": "4px",
+                        "DEFAULT": "12px", 
+                        "lg": "16px",
+                        "xl": "24px",
                         "full": "9999px"
                     },
                     spacing: {
-                        "container-max": "1200px",
+                        "container-max": "1240px",
                         "lg": "32px",
                         "xs": "6px",
                         "sm": "12px",
                         "base": "12px",
-                        "xxl": "88px",
+                        "xxl": "96px",
                         "xl": "48px",
                         "gutter": "32px",
-                        "md": "20px"
+                        "md": "24px"
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Cinzel', 'serif']
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
                     }
                 },
             },
@@ -57,24 +54,24 @@
     </script>
     <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
         body {
-            background-color: #F9F9FB;
-            color: #0B111E;
+            background-color: #F8FAFC;
+            color: #0F172A;
             overflow-x: hidden;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
         #menu-toggle:checked ~ #mobile-menu {
-            max-height: 400px;
+            max-height: 450px;
             opacity: 1;
             visibility: visible;
         }
         .typed-cursor {
-            color: #D4AF37;
-            font-weight: 300;
+            color: #4F46E5;
+            font-weight: 400;
         }
-        /* Premium navigation links */
+        /* Modern Creative Agency Nav Lines */
         .nav-link {
             position: relative;
             transition: color 0.3s ease;
@@ -84,309 +81,312 @@
             position: absolute;
             width: 100%;
             transform: scaleX(0);
-            height: 1px;
-            bottom: -6px;
+            height: 2px;
+            bottom: -4px;
             left: 0;
-            background-color: #D4AF37;
+            background: linear-gradient(90deg, #4F46E5, #8B5CF6);
             transform-origin: bottom right;
-            transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
         }
         .nav-link:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
         }
-        /* Luxury Hover Cards Glow */
-        .luxury-card {
-            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        /* Creative Shadow Glow Cards */
+        .creative-card {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .luxury-card:hover {
-            border-color: #D4AF37;
-            box-shadow: 0 20px 40px -15px rgba(11, 17, 30, 0.05);
-            transform: translateY(-4px);
+        .creative-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 30px 60px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(79, 70, 229, 0.08);
         }
-        /* Custom Premium Scrollbar */
+        /* Fluid Gradient Orb Backgrounds */
+        .gradient-blur-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(130px);
+            opacity: 0.45;
+            pointer-events: none;
+            z-index: 0;
+        }
+        /* Smooth Modern Web Custom Scrollbar */
         ::-webkit-scrollbar {
-            width: 8px;
+            width: 10px;
         }
         ::-webkit-scrollbar-track {
-            background: #0B111E;
+            background: #F1F5F9;
         }
         ::-webkit-scrollbar-thumb {
-            background: #D4AF37;
+            background: #CBD5E1;
+            border-radius: 20px;
+            border: 2px solid #F1F5F9;
         }
-        /* Ambient Floating Animation */
-        @keyframes subtleFloat {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-6px); }
-            100% { transform: translateY(0px); }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
         }
-        .float-premium {
-            animation: subtleFloat 4s ease-in-out infinite;
-        }
-        /* Dynamic Luxury Mask Overlay */
-        .luxury-mask::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(11,17,30,0.92) 0%, rgba(20,32,54,0.80) 100%);
+        /* High-fidelity CSS Grid Overlay Pattern replacement */
+        .native-grid-bg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M40 40H0V0h40v40z' fill='none'/%3E%3Cpath d='M40 0H0v40' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='1'/%3E%3C/svg%3E");
+            background-repeat: repeat;
         }
     </style>
 </head>
-<body class="bg-surface pt-[80px]">
+<body class="bg-surface pt-[88px]">
 
-<nav class="fixed top-0 left-0 right-0 z-50 bg-primary border-b border-gold/10 transition-all duration-300" id="main-nav">
-    <div class="flex justify-between items-center w-full px-6 md:px-lg py-md max-w-container-max mx-auto relative">
+<div class="gradient-blur-orb w-[500px] h-[500px] bg-gradient-to-tr from-indigo-200 to-purple-200 top-[-10%] left-[-10%]"></div>
+<div class="gradient-blur-orb w-[600px] h-[600px] bg-gradient-to-br from-amber-100 to-pink-100 top-[30%] right-[-15%]"></div>
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 transition-all duration-300" id="main-nav">
+    <div class="flex justify-between items-center w-full px-6 md:px-lg py-5 max-w-container-max mx-auto relative">
         
-        <a href="#home" class="flex items-center gap-3 cursor-pointer select-none group">
-            <div class="w-10 h-10 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" class="w-full h-full transform duration-700 group-hover:scale-105">
-                    <path d='M10,12 L36,12 L50,68 L64,12 L90,12 L58,108 L42,108 Z' fill='#D4AF37'/>
-                    <path d='M25,80 C42,64 60,42 75,15 L81,23 C65,51 47,73 31,88 Z' fill='#F9F9FB'/>
-                    <path d='M64,13 L82,13 L82,31 Z' fill='#F9F9FB'/>
-                </svg>
+        <a href="#home" class="flex items-center gap-3.5 cursor-pointer select-none group">
+            <div class="h-11 w-11 flex items-center justify-center rounded-xl overflow-hidden shadow-sm border border-slate-100 bg-white">
+                <img src="LOGO.jpg" alt="Vertax Advisory Logo" class="h-full w-full object-cover transform duration-700 group-hover:scale-105"/>
             </div>
-            <div class="flex flex-col tracking-[0.22em] leading-none uppercase">
-                <span class="font-serif text-sm font-semibold text-gold">Vertax</span>
-                <span class="font-sans text-[9px] text-white/50 tracking-[0.38em] mt-[3px]">Auditors</span>
+            <div class="flex flex-col tracking-wide leading-none">
+                <span class="font-sans text-base font-bold text-brand-dark group-hover:text-primary transition-colors">Vertax</span>
+                <span class="font-sans text-[10px] font-medium text-brand-gray tracking-[0.18em] mt-[3px] uppercase">Advisory</span>
             </div>
         </a>
         
         <input type="checkbox" id="menu-toggle" class="hidden" />
-        <label for="menu-toggle" class="flex md:hidden cursor-pointer p-2 hover:bg-white/10 rounded select-none">
-            <span class="material-symbols-outlined text-gold">menu</span>
+        <label for="menu-toggle" class="flex md:hidden cursor-pointer p-2.5 hover:bg-slate-50 rounded-xl transition-colors select-none">
+            <span class="material-symbols-outlined text-brand-dark">menu</span>
         </label>
 
         <div class="hidden md:flex gap-lg items-center">
-            <a class="font-sans text-xs uppercase tracking-widest text-gold border-b border-gold pb-1 transition-colors duration-200" href="#home">Home</a>
-            <a class="font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold transition-colors duration-200 nav-link" href="#pillars">Pillars</a>
-            <a class="font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold transition-colors duration-200 nav-link" href="#services">Services</a>
-            <a class="font-sans text-xs uppercase tracking-widest text-white/70 hover:text-gold transition-colors duration-200 nav-link" href="#locations">Location</a>
+            <a class="font-sans text-sm font-medium text-primary transition-colors duration-200" href="#home">Home</a>
+            <a class="font-sans text-sm font-medium text-brand-dark/70 hover:text-primary transition-colors duration-200 nav-link" href="#services">Services</a>
+            <a class="font-sans text-sm font-medium text-brand-dark/70 hover:text-primary transition-colors duration-200 nav-link" href="#locations">Location</a>
+            <a class="font-sans text-sm font-medium text-brand-dark/70 hover:text-primary transition-colors duration-200 nav-link" href="#contact">Contact</a>
         </div>
        
-        <div id="mobile-menu" class="absolute top-full left-0 right-0 max-h-0 opacity-0 visibility-hidden overflow-hidden bg-primary border-b border-gold/10 flex flex-col gap-md px-6 py-0 transition-all duration-300 ease-in-out md:hidden z-40 shadow-xl">
-            <a class="font-sans text-xs uppercase tracking-widest text-gold pt-4 pb-2 border-b border-white/5" href="#home">Home</a>
-            <a class="font-sans text-xs uppercase tracking-widest text-white/70 py-2 border-b border-white/5" href="#pillars">Pillars</a>
-            <a class="font-sans text-xs uppercase tracking-widest text-white/70 py-2 border-b border-white/5" href="#services">Services</a>
-            <a class="font-sans text-xs uppercase tracking-widest text-white/70 py-2 pb-4" href="#locations">Location</a>
-            <button class="w-full bg-gold text-primary py-3 text-xs font-sans uppercase tracking-widest mb-4 hover:bg-gold-dim transition-all">
+        <div id="mobile-menu" class="absolute top-full left-4 right-4 max-h-0 opacity-0 visibility-hidden overflow-hidden bg-white border border-slate-100 rounded-2xl flex flex-col gap-4 px-6 py-0 transition-all duration-300 ease-in-out md:hidden z-40 shadow-xl shadow-slate-200/50">
+            <a class="font-sans text-sm font-semibold text-primary pt-5 pb-2 border-b border-slate-50" href="#home">Home</a>
+            <a class="font-sans text-sm font-medium text-brand-dark/80 py-2 border-b border-slate-50" href="#services">Services</a>
+            <a class="font-sans text-sm font-medium text-brand-dark/80 py-2 pb-4" href="#locations">Location</a>
+            <a class="font-sans text-sm font-medium text-brand-dark/80 py-2 pb-4 border-b border-slate-50" href="#contact">Contact</a>
+            <a href="https://wa.me/917736432508" target="_blank" class="w-full text-center bg-primary text-white py-3.5 rounded-xl text-sm font-semibold mb-5 hover:bg-indigo-700 transition-all">
                 Request Briefing
-            </button>
+            </a>
         </div>
     </div>
 </nav>
 
-<header id="home" class="luxury-mask relative min-h-[85vh] md:min-h-[95vh] flex items-center bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');">
-    <div class="absolute inset-0 z-10 opacity-30 pointer-events-none" id="hero-interactive-glow"></div>
+<header id="home" class="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden z-10 bg-slate-900 rounded-b-[24px] md:rounded-b-[40px] mx-0 md:mx-4 shadow-xl">
+    <div class="absolute inset-0 w-full h-full object-cover z-0 overflow-hidden select-none pointer-events-none">
+        <video class="w-full h-full object-cover" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-business-district-at-night-with-light-trails-and-skyscrapers-41764-large.mp4" type="video/mp4">
+            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0ee273efca9013c743af7835da6670a&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+    </div>
     
-    <div class="relative z-20 w-full max-w-container-max mx-auto px-6 md:px-lg py-12">
-        <div class="max-w-2xl text-on-primary" data-aos="fade-right" data-aos-duration="1200">
-            <span class="text-gold font-sans text-xs uppercase tracking-[0.3em] block mb-4" data-aos="fade-down" data-aos-delay="200">Your Perfect Business Partner</span>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-light leading-tight tracking-wide mb-md">
-                Surgical Precision <br class="hidden sm:inline"/> In 
-                <span id="typed-target" class="text-gold font-normal"></span>
-            </h1>
-            <p class="font-sans text-sm md:text-base font-light text-white/60 mb-xl max-w-lg mt-6 leading-relaxed border-l border-gold/20 pl-4">
-                At Vertax Auditors, we provide comprehensive audit, assurance, tax, and advisory services to help your business grow with confidence.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-md"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/80 to-indigo-950/50 z-10 pointer-events-none"></div>
+    <div class="absolute inset-0 z-10 opacity-10 pointer-events-none" id="hero-interactive-glow"></div>
+    
+    <div class="relative w-full max-w-container-max mx-auto px-6 md:px-lg py-16 z-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-10 xl:col-span-9 text-white" data-aos="fade-right" data-aos-duration="1200">
+                <div class="inline-flex items-center gap-2 bg-indigo-500/10 backdrop-blur-md text-indigo-300 border border-indigo-500/20 font-sans text-xs font-semibold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-6" data-aos="fade-down" data-aos-delay="200">
+                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+                    Insight for Today. Growth for Tomorrow.
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-extrabold tracking-tight leading-[1.15] mb-md text-white">
+                    Uncompromising Accuracy <br/> In <span id="typed-target" class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-300"></span>
+                </h1>
+                <p class="font-sans text-base md:text-lg font-light text-slate-300 mb-10 max-w-2xl mt-6 leading-relaxed">
+                    At Vertax Advisory, we provide micro-targeted audit, corporate assurance, specialized tax frameworks, and strategic business consulting to power structural growth.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#services" class="bg-primary text-white px-7 py-4 rounded-xl font-semibold text-sm hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-600/30 flex items-center gap-2 border border-indigo-500/20">
+                        Explore Capabilities <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                    <a href="#locations" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-7 py-4 rounded-xl font-semibold text-sm hover:bg-white/20 transition-all">
+                        Contact Office
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
 </header>
 
-<section id="pillars" class="py-24 md:py-xxl bg-surface-container overflow-hidden relative">
-    <div class="max-w-container-max mx-auto px-6 md:px-lg">
-        <div class="mb-xl text-center" data-aos="fade-up">
-            <span class="text-secondary font-sans text-xs uppercase tracking-[0.25em] block mb-2">Our Creed</span>
-            <h2 class="font-serif text-3xl md:text-4xl font-light tracking-wide text-primary">Foundational Pillars</h2>
-            <div class="w-12 h-[1px] bg-gold mx-auto mt-4"></div>
-        </div>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-md md:gap-lg">
-            <div class="luxury-card bg-surface-card p-xl border border-outline-variant/60 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-10 h-10 flex items-center justify-center bg-primary text-gold border border-gold/20 mb-md transition-colors duration-300">
-                    <span class="material-symbols-outlined">balance</span>
-                </div>
-                <h3 class="font-serif text-lg tracking-wide mb-sm text-primary">Independence</h3>
-                <p class="text-secondary font-sans text-sm font-light leading-relaxed">Maintaining rigorous objective distance to ensure zero-compromise reporting parameters and unwavering ethical benchmarks.</p>
-            </div>
-            
-            <div class="luxury-card bg-surface-card p-xl border border-outline-variant/60 shadow-sm" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-10 h-10 flex items-center justify-center bg-primary text-gold border border-gold/20 mb-md transition-colors duration-300">
-                    <span class="material-symbols-outlined">biotech</span>
-                </div>
-                <h3 class="font-serif text-lg tracking-wide mb-sm text-primary">Forensic Rigor</h3>
-                <p class="text-secondary font-sans text-sm font-light leading-relaxed">Utilizing micro-level deep data analytics and surgical architecture scrutiny to uncover corporate exposure matrices early.</p>
-            </div>
-            
-            <div class="luxury-card bg-surface-card p-xl border border-outline-variant/60 shadow-sm sm:col-span-2 md:col-span-1" data-aos="fade-up" data-aos-delay="300">
-                <div class="w-10 h-10 flex items-center justify-center bg-primary text-gold border border-gold/20 mb-md transition-colors duration-300">
-                    <span class="material-symbols-outlined">visibility</span>
-                </div>
-                <h3 class="font-serif text-lg tracking-wide mb-sm text-primary">Sovereign Foresight</h3>
-                <p class="text-secondary font-sans text-sm font-light leading-relaxed">Translating legacy transactional metadata into active enterprise defenses against fluid global legislative dynamics.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="services" class="py-24 md:py-xxl bg-surface">
+<section id="services" class="py-24 md:py-xxl bg-surface border-t border-slate-100">
     <div class="max-w-container-max mx-auto px-6 md:px-lg">
         
-        <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-            <span class="text-secondary font-sans text-xs uppercase tracking-[0.25em] block mb-2">Capabilities Registry</span>
-            <h2 class="font-serif text-3xl md:text-4xl text-primary font-light tracking-wide mb-4 leading-tight">Our Specialized Corporate Services</h2>
-            <div class="w-12 h-[1px] bg-gold mx-auto mt-4 mb-6"></div>
-            <p class="text-secondary font-sans text-sm font-light leading-relaxed mb-6">Providing high-stakes data architecture compliance, legal fortification, and financial advisory blueprints tailored for business growth.</p>
-            <a class="inline-flex items-center gap-sm text-primary font-sans text-xs uppercase tracking-widest font-semibold border-b border-primary pb-1 hover:text-gold hover:border-gold transition-all" href="#">
-                Explore Full Service Menu
-                <span class="material-symbols-outlined group-hover:translate-x-1.5 transition-transform duration-300">arrow_forward</span>
-            </a>
+        <div class="text-center max-w-2xl mx-auto mb-20" data-aos="fade-up">
+            <span class="text-primary font-sans text-xs font-bold uppercase tracking-widest block mb-3">Capabilities Registry</span>
+            <h2 class="font-sans text-3xl md:text-4xl text-brand-dark font-extrabold tracking-tight mb-4 leading-tight">Our Specialized Corporate Services</h2>
+            <p class="text-brand-gray font-sans text-sm font-normal leading-relaxed">Providing high-stakes data architecture compliance, legal fortification, and financial advisory blueprints tailored for business growth.</p>
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-md" data-aos="fade-up" data-aos-delay="100">
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
-                <div class="flex items-center gap-md mb-md">
-                    <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">account_balance_wallet</span>
-                    <h4 class="font-serif text-md tracking-wide text-primary font-semibold">TDS & ITR</h4>
+            <div class="creative-card bg-white border border-slate-100 p-xl group rounded-2xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 group-hover:bg-primary group-hover:text-white text-primary rounded-xl flex items-center justify-center transition-colors mb-6">
+                        <span class="material-symbols-outlined text-md">account_balance_wallet</span>
+                    </div>
+                    <h4 class="font-sans text-base text-brand-dark font-bold mb-3">TDS & ITR</h4>
+                    <p class="text-brand-gray font-sans text-xs font-normal leading-relaxed mb-6">Rigorous systematic TDS compliance management along with accurate enterprise Income Tax Return filing services.</p>
                 </div>
-                <p class="text-secondary font-sans text-xs font-light leading-relaxed">Rigorous systematic TDS compliance management along with accurate enterprise Income Tax Return filing services.</p>
+                <span class="text-primary text-xs font-semibold inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">Deploy Service <span class="text-[10px]">➞</span></span>
             </div>
             
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
-                <div class="flex items-center gap-md mb-md">
-                    <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">receipt_long</span>
-                    <h4 class="font-serif text-md tracking-wide text-primary font-semibold">GST Registration & Filing</h4>
+            <div class="creative-card bg-white border border-slate-100 p-xl group rounded-2xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 group-hover:bg-primary group-hover:text-white text-primary rounded-xl flex items-center justify-center transition-colors mb-6">
+                        <span class="material-symbols-outlined text-md">receipt_long</span>
+                    </div>
+                    <h4 class="font-sans text-base text-brand-dark font-bold mb-3">GST Filing</h4>
+                    <p class="text-brand-gray font-sans text-xs font-normal leading-relaxed mb-6">Hassle-free GST registration, financial data filing, and continuous corporate tax compliance management.</p>
                 </div>
-                <p class="text-secondary font-sans text-xs font-light leading-relaxed">Hassle-free GST registration, financial data filing, and continuous corporate tax compliance management.</p>
+                <span class="text-primary text-xs font-semibold inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">Deploy Service <span class="text-[10px]">➞</span></span>
             </div>
             
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
-                <div class="flex items-center gap-md mb-md">
-                    <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">draw</span>
-                    <h4 class="font-serif text-md tracking-wide text-primary font-semibold">Digital Signature</h4>
+            <div class="creative-card bg-white border border-slate-100 p-xl group rounded-2xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 group-hover:bg-primary group-hover:text-white text-primary rounded-xl flex items-center justify-center transition-colors mb-6">
+                        <span class="material-symbols-outlined text-md">draw</span>
+                    </div>
+                    <h4 class="font-sans text-base text-brand-dark font-bold mb-3">Digital Signature</h4>
+                    <p class="text-brand-gray font-sans text-xs font-normal leading-relaxed mb-6">Get your professional and authenticated Digital Signature Certificate configured quickly and securely.</p>
                 </div>
-                <p class="text-secondary font-sans text-xs font-light leading-relaxed">Get your professional and authenticated Digital Signature Certificate configured quickly and securely.</p>
+                <span class="text-primary text-xs font-semibold inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">Deploy Service <span class="text-[10px]">➞</span></span>
             </div>
             
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
-                <div class="flex items-center gap-md mb-md">
-                    <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">corporate_fare</span>
-                    <h4 class="font-serif text-md tracking-wide text-primary font-semibold">LLP / Company Incorporation</h4>
+            <div class="creative-card bg-white border border-slate-100 p-xl group rounded-2xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 group-hover:bg-primary group-hover:text-white text-primary rounded-xl flex items-center justify-center transition-colors mb-6">
+                        <span class="material-symbols-outlined text-md">corporate_fare</span>
+                    </div>
+                    <h4 class="font-sans text-base text-brand-dark font-bold mb-3">Incorporation</h4>
+                    <p class="text-brand-gray font-sans text-xs font-normal leading-relaxed mb-6">End-to-end procedural support for structured LLP and Private Limited Company operational configuration.</p>
                 </div>
-                <p class="text-secondary font-sans text-xs font-light leading-relaxed">End-to-end procedural support for structured LLP and Private Limited Company operational configuration.</p>
+                <span class="text-primary text-xs font-semibold inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">Deploy Service <span class="text-[10px]">➞</span></span>
             </div>
 
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
-                <div class="flex items-center gap-md mb-md">
-                    <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">handshake</span>
-                    <h4 class="font-serif text-md tracking-wide text-primary font-semibold">Partnership</h4>
+            <div class="creative-card bg-white border border-slate-100 p-xl group rounded-2xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 group-hover:bg-primary group-hover:text-white text-primary rounded-xl flex items-center justify-center transition-colors mb-6">
+                        <span class="material-symbols-outlined text-md">handshake</span>
+                    </div>
+                    <h4 class="font-sans text-base text-brand-dark font-bold mb-3">Partnership</h4>
+                    <p class="text-brand-gray font-sans text-xs font-normal leading-relaxed mb-6">Meticulous partnership firm registration architecture along with ongoing core compliance updates.</p>
                 </div>
-                <p class="text-secondary font-sans text-xs font-light leading-relaxed">Meticulous partnership firm registration architecture along with ongoing core compliance updates.</p>
+                <span class="text-primary text-xs font-semibold inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">Deploy Service <span class="text-[10px]">➞</span></span>
             </div>
 
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
-                <div class="flex items-center gap-md mb-md">
-                    <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">verified_user</span>
-                    <h4 class="font-serif text-md tracking-wide text-primary font-semibold">FSSAI & Trademark</h4>
+            <div class="creative-card bg-white border border-slate-100 p-xl group rounded-2xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 group-hover:bg-primary group-hover:text-white text-primary rounded-xl flex items-center justify-center transition-colors mb-6">
+                        <span class="material-symbols-outlined text-md">verified_user</span>
+                    </div>
+                    <h4 class="font-sans text-base text-brand-dark font-bold mb-3">FSSAI & Trademark</h4>
+                    <p class="text-brand-gray font-sans text-xs font-normal leading-relaxed mb-6">Strategic sovereign corporate FSSAI processing registration alongside protective Trademark filing assistance.</p>
                 </div>
-                <p class="text-secondary font-sans text-xs font-light leading-relaxed">Strategic sovereign corporate FSSAI processing registration alongside protective Trademark filing assistance.</p>
+                <span class="text-primary text-xs font-semibold inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">Deploy Service <span class="text-[10px]">➞</span></span>
             </div>
 
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
-                <div class="flex items-center gap-md mb-md">
-                    <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">description</span>
-                    <h4 class="font-serif text-md tracking-wide text-primary font-semibold">Agreements</h4>
+            <div class="creative-card bg-white border border-slate-100 p-xl group rounded-2xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 group-hover:bg-primary group-hover:text-white text-primary rounded-xl flex items-center justify-center transition-colors mb-6">
+                        <span class="material-symbols-outlined text-md">description</span>
+                    </div>
+                    <h4 class="font-sans text-base text-brand-dark font-bold mb-3">Agreements</h4>
+                    <p class="text-brand-gray font-sans text-xs font-normal leading-relaxed mb-6">Professional structural drafting and continuous oversight review of all varieties of corporate legal agreements.</p>
                 </div>
-                <p class="text-secondary font-sans text-xs font-light leading-relaxed">Professional structural drafting and continuous oversight review of all varieties of corporate legal agreements.</p>
+                <span class="text-primary text-xs font-semibold inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">Deploy Service <span class="text-[10px]">➞</span></span>
             </div>
 
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 p-xl group shadow-sm">
-                <div class="flex items-center gap-md mb-md">
-                    <span class="material-symbols-outlined text-gold text-xl group-hover:rotate-12 transition-transform">badge</span>
-                    <h4 class="font-serif text-md tracking-wide text-primary font-semibold">EPF / ESI</h4>
+            <div class="creative-card bg-white border border-slate-100 p-xl group rounded-2xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 group-hover:bg-primary group-hover:text-white text-primary rounded-xl flex items-center justify-center transition-colors mb-6">
+                        <span class="material-symbols-outlined text-md">badge</span>
+                    </div>
+                    <h4 class="font-sans text-base text-brand-dark font-bold mb-3">EPF / ESI</h4>
+                    <p class="text-brand-gray font-sans text-xs font-normal leading-relaxed mb-6">EPF & ESI corporate baseline system registration together with structural compliance management.</p>
                 </div>
-                <p class="text-secondary font-sans text-xs font-light leading-relaxed">EPF & ESI corporate baseline system registration together with structural compliance management.</p>
+                <span class="text-primary text-xs font-semibold inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">Deploy Service <span class="text-[10px]">➞</span></span>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-24 bg-primary text-on-primary overflow-hidden relative border-t border-b border-gold/10">
-    <div class="absolute right-0 top-0 w-1/3 h-full opacity-[0.03] pointer-events-none hidden md:block">
-        <img class="w-full h-full object-cover grayscale" alt="Sophisticated landscape architectural wire asset" src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80"/>
-    </div>
+<section class="py-24 bg-brand-dark text-white overflow-hidden relative rounded-t-[32px]">
+    <div class="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-[0.15] pointer-events-none hidden md:block native-grid-bg"></div>
+    
     <div class="max-w-container-max mx-auto px-6 md:px-lg relative z-10">
         <div class="w-full">
-            <h2 class="font-serif text-2xl md:text-3xl font-light tracking-wide mb-xl text-center md:text-left" data-aos="fade-up">Why Choose Vertax Auditors?</h2>
+            <h2 class="font-sans text-3xl md:text-4xl font-extrabold tracking-tight mb-16 text-center md:text-left" data-aos="fade-up">Why Choose Vertax Advisory?</h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-lg opacity-85 text-xs font-sans" data-aos="fade-up" data-aos-delay="150">
-                <div class="flex flex-col gap-sm border-t border-gold/20 pt-4">
-                    <div class="flex items-center gap-sm text-gold font-medium uppercase tracking-widest">
-                        <span class="material-symbols-outlined text-2xl">shield</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-lg opacity-90 text-sm font-sans" data-aos="fade-up" data-aos-delay="150">
+                <div class="flex flex-col gap-sm border-t border-slate-700 pt-6">
+                    <div class="flex items-center gap-3 text-indigo-400 font-bold uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-xl">shield</span>
                         <span>Expertise</span>
                     </div>
-                    <p class="text-white/60 font-light mt-1">Experienced professionals with deep industry knowledge.</p>
+                    <p class="text-slate-400 font-normal mt-1 leading-relaxed">Experienced professionals with specialized core industrial parameters.</p>
                 </div>
-                <div class="flex flex-col gap-sm border-t border-gold/20 pt-4">
-                    <div class="flex items-center gap-sm text-gold font-medium uppercase tracking-widest">
-                        <span class="material-symbols-outlined text-2xl">track_changes</span>
+                <div class="flex flex-col gap-sm border-t border-slate-700 pt-6">
+                    <div class="flex items-center gap-3 text-indigo-400 font-bold uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-xl">track_changes</span>
                         <span>Accuracy</span>
                     </div>
-                    <p class="text-white/60 font-light mt-1">Uncompromising metric commitment to precision and system quality.</p>
+                    <p class="text-slate-400 font-normal mt-1 leading-relaxed">Uncompromising data verification models ensuring risk mitigation.</p>
                 </div>
-                <div class="flex flex-col gap-sm border-t border-gold/20 pt-4">
-                    <div class="flex items-center gap-sm text-gold font-medium uppercase tracking-widest">
-                        <span class="material-symbols-outlined text-2xl">handshake</span>
+                <div class="flex flex-col gap-sm border-t border-slate-700 pt-6">
+                    <div class="flex items-center gap-3 text-indigo-400 font-bold uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-xl">handshake</span>
                         <span>Integrity</span>
                     </div>
-                    <p class="text-white/60 font-light mt-1">Upholding the highest professional standards of ethics and data transparency.</p>
+                    <p class="text-slate-400 font-normal mt-1 leading-relaxed">Upholding highly secure, transparent global compliance standard parameters.</p>
                 </div>
-                <div class="flex flex-col gap-sm border-t border-gold/20 pt-4">
-                    <div class="flex items-center gap-sm text-gold font-medium uppercase tracking-widest">
-                        <span class="material-symbols-outlined text-2xl">groups</span>
+                <div class="flex flex-col gap-sm border-t border-slate-700 pt-6">
+                    <div class="flex items-center gap-3 text-indigo-400 font-bold uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-xl">groups</span>
                         <span>Client Focus</span>
                     </div>
-                    <p class="text-white/60 font-light mt-1">Tailored operational solutions explicitly designed around your unique business needs.</p>
+                    <p class="text-slate-400 font-normal mt-1 leading-relaxed">Tailored operational solutions explicitly designed around your architecture.</p>
                 </div>
             </div>
 
-            <div class="mt-xl pt-xl border-t border-gold/10 text-left" data-aos="fade-up" data-aos-delay="300">
-                <p class="font-serif text-lg md:text-xl italic font-light text-white/80 leading-relaxed">"Vertax Auditors provides the structural precision and surgical transparency required to run assets across highly volatile financial updates with absolute clarity."</p>
-                <p class="mt-md font-sans text-xs uppercase tracking-widest text-gold">— Managing Chief Officer, Global Corporate Finance</p>
+            <div class="mt-20 pt-10 border-t border-slate-800 text-left" data-aos="fade-up" data-aos-delay="300">
+                <p class="font-serif text-xl md:text-2xl italic font-light text-slate-300 leading-relaxed max-w-4xl">"Vertax Advisory provides the extreme system visibility and micro-compliance speed required to manage transactional risk profiles with absolute security."</p>
+                <p class="mt-6 font-sans text-xs font-semibold uppercase tracking-widest text-indigo-400">— Managing Partner, Global Venture Enterprise Partners</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="locations" class="py-24 md:py-xxl bg-surface-container border-t border-outline-variant/30">
+<section id="locations" class="py-24 md:py-xxl bg-surface border-b border-slate-100">
     <div class="max-w-container-max mx-auto px-6 md:px-lg">
-        <div class="mb-xl text-center" data-aos="fade-up">
-            <span class="text-secondary font-sans text-xs uppercase tracking-[0.25em] block mb-2">Corporate Headquarters</span>
-            <h2 class="font-serif text-3xl md:text-4xl font-light tracking-wide text-primary">Our Location</h2>
-            <div class="w-12 h-[1px] bg-gold mx-auto mt-4"></div>
+        <div class="mb-16 text-center" data-aos="fade-up">
+            <span class="text-primary font-sans text-xs font-bold uppercase tracking-widest block mb-3">Corporate Headquarters</span>
+            <h2 class="font-sans text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark">Our Location</h2>
         </div>
         
         <div class="max-w-4xl mx-auto">
-            <div class="luxury-card bg-surface-card border border-outline-variant/60 overflow-hidden group shadow-sm relative flex flex-col md:flex-row" data-aos="fade-up">
-                <div class="w-full md:w-1/2 h-64 md:h-auto min-h-[260px] bg-primary/10 relative overflow-hidden">
+            <div class="creative-card bg-white border border-slate-100 rounded-3xl overflow-hidden group shadow-md relative flex flex-col md:flex-row" data-aos="fade-up">
+                <div class="w-full md:w-1/2 h-64 md:h-auto min-h-[300px] bg-slate-50 relative overflow-hidden">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.397190367184!2d76.0152643!3d11.158145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64f89d3cb50fb%3A0xe5a3c8e40fba100c!2sErattamuzhi%2C%20Kerala%20673645!5e0!3m2!1sen!2sin!4v1716300000000!5m2!1sen!2sin" 
-                        class="w-full h-full min-h-[260px] border-0 grayscale contrast-125 brightness-90 opacity-80 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" 
+                        class="w-full h-full min-h-[300px] border-0 contrast-[1.05] brightness-[0.98] group-hover:scale-105 transition-all duration-700" 
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                <div class="p-xl relative w-full md:w-1/2 flex flex-col justify-center">
-                    <span class="text-secondary font-sans text-xs tracking-wider block mb-sm uppercase">Kerala Operations</span>
-                    <h4 class="font-serif text-2xl font-light text-primary mb-md">Erattamuzhi</h4>
-                    <p class="text-secondary font-sans text-sm font-light mb-lg leading-relaxed">
-                        Vettupara,<br/>
-                        Kerala 673645
+                <div class="p-10 relative w-full md:w-1/2 flex flex-col justify-center bg-white">
+                    <span class="text-primary font-sans text-xs font-bold tracking-wider block mb-2 uppercase">Kerala Operations</span>
+                    <h4 class="font-sans text-2xl font-extrabold text-brand-dark mb-4">Edavannappara</h4>
+                    <p class="text-brand-gray font-sans text-sm font-normal mb-8 leading-relaxed">
+                        Areacode road,<br/>
+                        Erattamuzhi,Kerala ,673645
                     </p>
-                    <a href="https://maps.google.com/?q=Erattamuzhi,+Vettupara,+Kerala+673645" target="_blank" rel="noopener noreferrer" class="flex items-center gap-xs text-primary font-sans text-xs uppercase tracking-widest font-semibold hover:text-gold transition-colors cursor-pointer">
+                    <a href="https://maps.google.com/?q=Erattamuzhi,+Vettupara,+Kerala+673645" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-3 rounded-xl font-sans text-xs font-semibold uppercase tracking-wider hover:bg-primary transition-colors cursor-pointer w-fit shadow-md">
                         <span>Get Directions</span>
-                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+                        <span class="material-symbols-outlined text-xs">arrow_forward</span>
                     </a>
                 </div>
             </div>
@@ -394,42 +394,161 @@
     </div>
 </section>
 
-<footer class="bg-primary text-white/80 font-sans border-t border-gold/5">
-    <div class="w-full px-6 md:px-lg py-16 max-w-container-max mx-auto text-xs font-light flex flex-col items-center justify-center text-center">
-        <div class="flex items-center gap-sm mb-md text-on-primary justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" class="w-6 h-6">
-                <path d='M10,12 L36,12 L50,68 L64,12 L90,12 L58,108 L42,108 Z' fill='#D4AF37'/>
-                <path d='M25,80 C42,64 60,42 75,15 L81,23 C65,51 47,73 31,88 Z' fill='#F9F9FB'/>
-                <path d='M64,13 L82,13 L82,31 Z' fill='#F9F9FB'/>
-            </svg>
-            <span class="font-serif tracking-[0.25em] text-xs font-semibold uppercase text-gold ml-2">Vertax</span>
+<section id="contact" class="bg-[#1E1F26] text-white py-20 px-6 md:px-lg font-sans border-t border-slate-800">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-20">
+        
+        <div class="lg:col-span-7 flex flex-col" data-aos="fade-right">
+            <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight uppercase mb-10 text-white">
+                CONTACT <span class="text-[#FACC15]">US</span>
+            </h2>
+            
+            <form id="corporate-contact-form" class="space-y-6" novalidate>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-semibold tracking-wide text-slate-300">Name</label>
+                        <input type="text" name="Name" required placeholder="eg: Jane Doe" class="w-full bg-[#2A2B36] border border-transparent rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#FACC15] focus:ring-0 transition-colors"/>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-semibold tracking-wide text-slate-300">Email address</label>
+                        <input type="email" name="Email" required placeholder="eg: johndoe@example.com" class="w-full bg-[#2A2B36] border border-transparent rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#FACC15] focus:ring-0 transition-colors"/>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-semibold tracking-wide text-slate-300">Contact Number</label>
+                        <input type="tel" id="contact-phone" name="Phone" required maxlength="10" pattern="[6-9]\d{9}" placeholder="eg: 9876543210" class="w-full bg-[#2A2B36] border border-transparent rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#FACC15] focus:ring-0 transition-colors"/>
+                        <span id="phone-error-msg" class="text-rose-400 text-[11px] font-medium hidden mt-1 flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[14px]">error</span> Please enter a valid 10-digit primary mobile number.
+                        </span>
+                    </div>
+                    <div class="flex flex-col gap-2 relative z-30">
+                        <label class="text-xs font-semibold tracking-wide text-slate-300">Inquiry Type</label>
+                        <div class="relative">
+                            <select name="Inquiry Type" required class="w-full bg-[#2A2B36] border border-transparent rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-[#FACC15] focus:ring-0 appearance-none transition-colors cursor-pointer relative z-10">
+                                <option value="" disabled selected hidden>Choose Inquiry Type</option>
+                                <option>TDS</option>
+                                <option>ITR</option>
+                                <option>DIGITAL SIGNATURE</option>
+                                <option>LLP / COMPANY INCORPORATION</option>
+                                <option>PARTNERSHIP</option>
+                                <option>FSSAI & TRADEMARK</option>
+                                <option>AGREEMENTS</option>
+                                <option>EPF / ESI</option>
+                            </select>
+                            <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400 text-base z-20">expand_more</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold tracking-wide text-slate-300">Message</label>
+                    <textarea name="Message" rows="4" required placeholder="Tell us what you're looking for..." class="w-full bg-[#2A2B36] border border-transparent rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#FACC15] focus:ring-0 resize-none transition-colors"></textarea>
+                </div>
+                
+                <button type="submit" id="submit-btn" class="bg-[#FACC15] text-black font-bold text-sm tracking-wide px-8 py-3 rounded-md hover:bg-yellow-500 transition-colors uppercase shadow-md shadow-yellow-500/10 flex items-center justify-center gap-2">
+                    <span>Submit</span>
+                </button>
+                
+                <div id="form-status-feedback" class="hidden text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 transition-all duration-300"></div>
+            </form>
         </div>
-        <p class="text-white/40 leading-relaxed max-w-xl">
-            © 2026 Vertax Auditors. All rights reserved. Institutional global metrics and absolute clarity in strategic risk management. Pure fidelity encryption active.
+        
+        <div class="lg:col-span-5 flex flex-col justify-between" data-aos="fade-left">
+            <div>
+                <h3 class="text-3xl font-light text-slate-200 leading-snug">Let's Talk</h3>
+                <h4 class="text-4xl font-semibold text-slate-100 mt-2">We're Here to <span class="text-[#FACC15]">Help</span></h4>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-10 mt-12">
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full border border-[#FACC15]/30 flex items-center justify-center shrink-0 text-[#FACC15]">
+                            <span class="material-symbols-outlined text-lg">call</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold text-white tracking-wide">Call Us</span>
+                            <a href="tel:+917736432508" class="text-xs text-slate-300 font-medium mt-1 hover:text-[#FACC15] transition-colors">+91 7736432508</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full border border-[#FACC15]/30 flex items-center justify-center shrink-0 text-[#FACC15]">
+                            <span class="material-symbols-outlined text-lg">mail</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold text-white tracking-wide">Email Us</span>
+                            <a href="mailto:Vertaxauditors@gmail.com" class="text-xs text-slate-300 font-medium mt-1 hover:text-[#FACC15] transition-colors">Vertaxauditors@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full border border-[#FACC15]/30 flex items-center justify-center shrink-0 text-[#FACC15]">
+                            <span class="material-symbols-outlined text-lg">public</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold text-white tracking-wide">Website</span>
+                            <a href="https://vertaxadvisory.com/" target="_blank" class="text-xs text-slate-300 font-medium mt-1 hover:text-[#FACC15] transition-colors">https://vertaxadvisory.com/</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 rounded-full border border-[#FACC15]/30 flex items-center justify-center shrink-0 text-[#FACC15]">
+                            <span class="material-symbols-outlined text-lg">location_on</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-sm font-bold text-white tracking-wide">Address</span>
+                            <p class="text-xs text-slate-300 leading-relaxed font-medium mt-1">
+                                Edavannappara,<br>
+                                Areacode road ,<br>
+                                Erattamuzhi,Kerala 673645
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 lg:mt-0">
+                <span class="text-xs font-semibold tracking-widest text-slate-400 uppercase block mb-4">Follow us on</span>
+                <div class="flex gap-3">
+                    <a href="#" class="w-9 h-9 rounded-full bg-[#2A2B36] flex items-center justify-center text-sm text-slate-400 hover:bg-[#FACC15] hover:text-black transition-all"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-[#2A2B36] flex items-center justify-center text-sm text-slate-400 hover:bg-[#FACC15] hover:text-black transition-all"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-[#2A2B36] flex items-center justify-center text-sm text-slate-400 hover:bg-[#FACC15] hover:text-black transition-all"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-[#2A2B36] flex items-center justify-center text-sm text-slate-400 hover:bg-[#FACC15] hover:text-black transition-all"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<footer class="bg-white text-brand-dark font-sans border-t border-slate-100">
+    <div class="w-full px-6 md:px-lg py-12 max-w-container-max mx-auto text-sm font-normal flex flex-col items-center justify-center text-center">
+        <div class="flex items-center justify-center mb-4">
+            <div class="h-20 w-20 flex items-center justify-center overflow-hidden rounded-xl bg-white p-1">
+                <img src="LOGO.jpg" alt="Vertax Advisory Logo" class="h-full w-full object-cover"/>
+            </div>
+        </div>
+        <p class="text-brand-gray text-xs leading-relaxed max-w-xl">
+            © 2026 Vertax Advisory. All rights reserved. Institutional global metrics and absolute clarity in strategic risk management. Pure fidelity encryption active.
         </p>
     </div>
     
-    <div class="max-w-container-max mx-auto px-6 py-md border-t border-white/5 flex justify-between items-center flex-col sm:flex-row gap-4 text-[10px] uppercase tracking-widest text-white/30">
-        <a class="hover:text-gold transition-colors" href="#">Privacy Framework Policy</a>
-        <div class="flex gap-md">
-            <span class="material-symbols-outlined text-sm hover:text-gold cursor-pointer transition-colors">public</span>
-            <span class="material-symbols-outlined text-sm hover:text-gold cursor-pointer transition-colors">shield</span>
+    <div class="max-w-container-max mx-auto px-6 py-5 border-t border-slate-100 flex justify-between items-center flex-col sm:flex-row gap-4 text-[11px] font-medium tracking-wide text-brand-gray">
+        <a class="hover:text-primary transition-colors" href="#">Privacy Framework Policy</a>
+        <div class="flex gap-4">
+            <span class="material-symbols-outlined text-base hover:text-primary cursor-pointer transition-colors">public</span>
+            <span class="material-symbols-outlined text-base hover:text-primary cursor-pointer transition-colors">shield</span>
         </div>
     </div>
 </footer>
 
-<div class="fixed bottom-6 right-6 z-50 group">
-    <span class="absolute -top-1 -right-1 flex h-3 w-3 z-10">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-3 w-3 bg-gold"></span>
-    </span>
-    <a href="https://wa.me/917736432508" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-primary text-on-primary border border-gold pl-4 pr-5 py-3 shadow-2xl hover:bg-gold hover:text-primary transition-all duration-300 group">
-        <div class="text-xl flex items-center justify-center text-gold group-hover:text-primary transition-colors">
+<div class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/917736432508?text=Hello%20Vertax%20Advisory%2C%20I%20would%20like%20to%20inquire%20about%20your%20corporate%20financial%20and%20compliance%20services." target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 bg-white border border-slate-100 pl-4 pr-5 py-3 rounded-full shadow-2xl shadow-indigo-500/10 hover:border-indigo-200 group transition-all duration-300">
+        <div class="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center text-lg shadow-md shadow-green-500/20">
             <i class="fab fa-whatsapp"></i>
         </div>
         <div class="flex flex-col items-start leading-none">
-            <span class="text-[9px] uppercase tracking-widest opacity-60 font-medium">Private Concierge</span>
-            <span class="text-xs font-serif font-bold tracking-wide mt-[2px]">Chat Operations</span>
+            <span class="text-[9px] uppercase tracking-wider text-brand-gray font-bold">Chat Live</span>
+            <span class="text-xs font-bold text-brand-dark mt-[2px]">Operations Desk</span>
         </div>
     </a>
 </div>
@@ -438,32 +557,33 @@
     window.addEventListener('DOMContentLoaded', () => {
         // Init Premium Animate On Scroll Engine
         AOS.init({
-            duration: 1200,
-            easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
+            duration: 1000,
             once: true,
             mirror: false
         });
 
-        // Dynamic typing diagnostic loop strings
+        // Creative Dynamic typing diagnostic loop strings
         new Typed('#typed-target', {
             strings: ['Financial Integrity.', 'Regulatory Compliance.', 'Strategic Corporate Growth.'],
-            typeSpeed: 60,
-            backSpeed: 40,
+            typeSpeed: 50,
+            backSpeed: 30,
             backDelay: 2500,
             loop: true
         });
 
-        // Dynamic Navbar transparency transformation on view scroll vector changes
+        // Dynamic Navbar transformation metric logic on scroll vectors
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('main-nav');
-            if (window.scrollY > 40) {
-                nav.classList.add('py-2', 'shadow-xl', 'bg-primary/95', 'backdrop-blur-md');
+            if (window.scrollY > 30) {
+                nav.classList.add('py-3', 'shadow-lg', 'shadow-slate-100/50', 'bg-white/95');
+                nav.classList.remove('py-4');
             } else {
-                nav.classList.remove('py-2', 'shadow-xl', 'bg-primary/95', 'backdrop-blur-md');
+                nav.classList.remove('py-3', 'shadow-lg', 'shadow-slate-100/50', 'bg-white/95');
+                nav.classList.add('py-4');
             }
         });
 
-        // Luxury Mouse Pointer Ambient Glow Effect (Hero Section Mask Layer Tracking)
+        // Ambient Mouse Pointer Interactive Accent Tracking
         const heroSection = document.getElementById('home');
         const glowContainer = document.getElementById('hero-interactive-glow');
         
@@ -472,12 +592,94 @@
                 const rect = heroSection.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
-                glowContainer.style.background = `radial-gradient(circle 220px at ${x}px ${y}px, rgba(212, 175, 55, 0.08), transparent 80%)`;
+                glowContainer.style.background = `radial-gradient(circle 280px at ${x}px ${y}px, rgba(255, 255, 255, 0.04), transparent 80%)`;
             });
             heroSection.addEventListener('mouseleave', () => {
                 glowContainer.style.background = 'none';
             });
         }
+
+        // --- Core Contact Number Validation & Google Sheet Transmission System ---
+        const phoneInput = document.getElementById('contact-phone');
+        const errorMsg = document.getElementById('phone-error-msg');
+        const contactForm = document.getElementById('corporate-contact-form');
+        const feedbackContainer = document.getElementById('form-status-feedback');
+        const submitBtn = document.getElementById('submit-btn');
+
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzV0qldLBWAuVbsPCrbyE_Rc0tid2ogu8lTPdh72DeM270jUIbTsh1SQrvfziF0lgIq/exec";
+
+        // Prevent users from typing letters/special characters altogether
+        phoneInput.addEventListener('keypress', (e) => {
+            if (e.which < 48 || e.which > 57) {
+                e.preventDefault();
+            }
+        });
+
+        // Dynamic visual boundary indicator cleanup on user focus input
+        phoneInput.addEventListener('input', () => {
+            if (phoneInput.validity.valid) {
+                errorMsg.classList.add('hidden');
+                phoneInput.classList.remove('border-rose-400');
+            }
+        });
+
+        // Form submission intercept with validation loop & asynchronous fetch post engine
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Stop native synchronous browser routing reload
+            
+            const phoneNumber = phoneInput.value;
+            const phoneRegex = /^[6-9]\d{9}$/;
+
+            // Check phone criteria matching parameter frameworks
+            if (!phoneRegex.test(phoneNumber)) {
+                errorMsg.classList.remove('hidden');
+                phoneInput.classList.add('border-rose-400');
+                phoneInput.focus();
+                return;
+            }
+
+            // Check standard field validity (HTML5 required attributes)
+            if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                return;
+            }
+
+            // Clean feedback presentation layer rules
+            errorMsg.classList.add('hidden');
+            phoneInput.classList.remove('border-rose-400');
+            feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-blue-950 text-blue-300 border border-blue-800";
+            feedbackContainer.innerHTML = "Processing request parameters securely...";
+            feedbackContainer.classList.remove('hidden');
+
+            // Disable submit mechanism during transaction lifespan
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = "0.7";
+
+            // Map standard form context parameters natively
+            const formData = new FormData(contactForm);
+
+            // Transmit architecture payload safely using no-cors parameters
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            })
+            .then(() => {
+                feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-emerald-950 text-emerald-400 border border-emerald-800";
+                feedbackContainer.innerHTML = "Inquiry filed successfully. Financial analysts notified.";
+                contactForm.reset();
+            })
+            .catch(error => {
+                console.error('Transmission fault identified:', error);
+                feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-rose-950 text-rose-300 border border-rose-800";
+                feedbackContainer.innerHTML = "Transmission anomaly found. Please verify your script URL deployment settings.";
+            })
+            .finally(() => {
+                // Restore button functionality framework
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = "1";
+            });
+        });
     });
 </script>
 </body>
