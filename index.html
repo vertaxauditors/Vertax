@@ -6,7 +6,7 @@
     <title>Vertax Advisory | Surgical Precision in Financial Integrity</title>
     
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700&family=Playfair+Display:ital,wght=0,400;0,600;1,400&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -20,10 +20,10 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#4F46E5", // Modern Indigo Accent
-                        "brand-dark": "#0F172A", // Slate 900 for modern deep contrast texts
-                        "brand-gray": "#64748B", // Slate 500 secondary
-                        "surface": "#F8FAFC", // Clean Crisp Canvas Studio White
+                        "primary": "#4F46E5", 
+                        "brand-dark": "#0F172A", 
+                        "brand-gray": "#64748B", 
+                        "surface": "#F8FAFC", 
                         "surface-card": "#FFFFFF",
                         "accent-glow": "rgba(99, 102, 241, 0.04)"
                     },
@@ -71,7 +71,6 @@
             color: #4F46E5;
             font-weight: 400;
         }
-        /* Modern Creative Agency Nav Lines */
         .nav-link {
             position: relative;
             transition: color 0.3s ease;
@@ -92,7 +91,6 @@
             transform: scaleX(1);
             transform-origin: bottom left;
         }
-        /* Creative Shadow Glow Cards */
         .creative-card {
             transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -100,7 +98,6 @@
             transform: translateY(-6px);
             box-shadow: 0 30px 60px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(79, 70, 229, 0.08);
         }
-        /* Fluid Gradient Orb Backgrounds */
         .gradient-blur-orb {
             position: absolute;
             border-radius: 50%;
@@ -109,7 +106,6 @@
             pointer-events: none;
             z-index: 0;
         }
-        /* Smooth Modern Web Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -124,7 +120,6 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #94A3B8;
         }
-        /* High-fidelity CSS Grid Overlay Pattern replacement */
         .native-grid-bg {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M40 40H0V0h40v40z' fill='none'/%3E%3Cpath d='M40 0H0v40' fill='none' stroke='rgba(255,255,255,0.04)' stroke-width='1'/%3E%3C/svg%3E");
             background-repeat: repeat;
@@ -174,40 +169,37 @@
 </nav>
 
 <header id="home" class="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden z-10 bg-slate-900 rounded-b-[24px] md:rounded-b-[40px] mx-0 md:mx-4 shadow-xl">
-    <div class="absolute inset-0 w-full h-full object-cover z-0 overflow-hidden select-none pointer-events-none">
-        <video class="w-full h-full object-cover" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-business-district-at-night-with-light-trails-and-skyscrapers-41764-large.mp4" type="video/mp4">
-            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0ee273efca9013c743af7835da6670a&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
-        </video>
+    <div class="absolute inset-0 w-full h-full z-0 overflow-hidden select-none pointer-events-none">
+        <img 
+            src="unnamed (1).jpg" 
+            alt="Corporate Advisory Consultation" 
+            class="w-full h-full object-cover object-center"
+        />
     </div>
     
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-900/80 to-indigo-950/50 z-10 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/75 to-indigo-950/40 z-10 pointer-events-none"></div>
     <div class="absolute inset-0 z-10 opacity-10 pointer-events-none" id="hero-interactive-glow"></div>
     
     <div class="relative w-full max-w-container-max mx-auto px-6 md:px-lg py-16 z-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <div class="lg:col-span-10 xl:col-span-9 text-white" data-aos="fade-right" data-aos-duration="1200">
-                <div class="inline-flex items-center gap-2 bg-indigo-500/10 backdrop-blur-md text-indigo-300 border border-indigo-500/20 font-sans text-xs font-semibold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-6" data-aos="fade-down" data-aos-delay="200">
-                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
-                    Insight for Today. Growth for Tomorrow.
-                </div>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-extrabold tracking-tight leading-[1.15] mb-md text-white">
-                    Uncompromising Accuracy <br/> In <span id="typed-target" class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-300"></span>
-                </h1>
-                <p class="font-sans text-base md:text-lg font-light text-slate-300 mb-10 max-w-2xl mt-6 leading-relaxed">
-                    At Vertax Advisory, we provide micro-targeted audit, corporate assurance, specialized tax frameworks, and strategic business consulting to power structural growth.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#services" class="bg-primary text-white px-7 py-4 rounded-xl font-semibold text-sm hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-600/30 flex items-center gap-2 border border-indigo-500/20">
-                        Explore Capabilities <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </a>
-                    <a href="#locations" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-7 py-4 rounded-xl font-semibold text-sm hover:bg-white/20 transition-all">
-                        Contact Office
-                    </a>
-                </div>
+        <div class="flex flex-col text-white max-w-3xl" data-aos="fade-right" data-aos-duration="1200">
+            <div class="inline-flex items-center gap-2 bg-indigo-500/10 backdrop-blur-md text-indigo-300 border border-indigo-500/20 font-sans text-xs font-semibold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-6 w-fit" data-aos="fade-down" data-aos-delay="200">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-pulse"></span>
+                Insight for Today,Growth for Tomorrow.
             </div>
-
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-extrabold tracking-tight leading-[1.15] mb-6 text-white">
+                Uncompromising Accuracy <br/> In <span id="typed-target" class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-300"></span>
+            </h1>
+            <p class="font-sans text-base md:text-lg font-light text-slate-300 mb-10 max-w-2xl leading-relaxed">
+                At Vertax Advisory, we provide micro-targeted audit, corporate assurance, specialized tax frameworks, and strategic business consulting to power structural growth.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#services" class="bg-primary text-white px-7 py-4 rounded-xl font-semibold text-sm hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-600/30 flex items-center gap-2 border border-indigo-500/20">
+                    Explore Capabilities <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+                <a href="#locations" class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-7 py-4 rounded-xl font-semibold text-sm hover:bg-white/20 transition-all">
+                    Contact Office
+                </a>
+            </div>
         </div>
     </div>
 </header>
@@ -370,7 +362,7 @@
             <div class="creative-card bg-white border border-slate-100 rounded-3xl overflow-hidden group shadow-md relative flex flex-col md:flex-row" data-aos="fade-up">
                 <div class="w-full md:w-1/2 h-64 md:h-auto min-h-[300px] bg-slate-50 relative overflow-hidden">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.397190367184!2d76.0152643!3d11.158145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64f89d3cb50fb%3A0xe5a3c8e40fba100c!2sErattamuzhi%2C%20Kerala%20673645!5e0!3m2!1sen!2sin!4v1716300000000!5m2!1sen!2sin" 
+                        src="https://maps.google.com/maps?q=Edavannappara,Kerala&t=&z=13&ie=UTF8&iwloc=&output=embed" 
                         class="w-full h-full min-h-[300px] border-0 contrast-[1.05] brightness-[0.98] group-hover:scale-105 transition-all duration-700" 
                         allowfullscreen="" 
                         loading="lazy" 
@@ -384,7 +376,7 @@
                         Areacode road,<br/>
                         Erattamuzhi,Kerala ,673645
                     </p>
-                    <a href="https://maps.google.com/?q=Erattamuzhi,+Vettupara,+Kerala+673645" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-3 rounded-xl font-sans text-xs font-semibold uppercase tracking-wider hover:bg-primary transition-colors cursor-pointer w-fit shadow-md">
+                    <a href="https://maps.google.com/?q=Edavannappara,Kerala" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 text-white px-5 py-3 rounded-xl font-sans text-xs font-semibold uppercase tracking-wider hover:bg-primary transition-colors cursor-pointer w-fit shadow-md">
                         <span>Get Directions</span>
                         <span class="material-symbols-outlined text-xs">arrow_forward</span>
                     </a>
@@ -555,21 +547,23 @@
 
 <script>
     window.addEventListener('DOMContentLoaded', () => {
-        // Init Premium Animate On Scroll Engine
+        // Init Animate On Scroll Engine
         AOS.init({
             duration: 1000,
             once: true,
             mirror: false
         });
 
-        // Creative Dynamic typing diagnostic loop strings
-        new Typed('#typed-target', {
-            strings: ['Financial Integrity.', 'Regulatory Compliance.', 'Strategic Corporate Growth.'],
-            typeSpeed: 50,
-            backSpeed: 30,
-            backDelay: 2500,
-            loop: true
-        });
+        // Safe Initialization of TypedJS
+        if(document.getElementById('typed-target')) {
+            new Typed('#typed-target', {
+                strings: ['Financial Integrity.', 'Regulatory Compliance.', 'Strategic Corporate Growth.'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 2500,
+                loop: true
+            });
+        }
 
         // Dynamic Navbar transformation metric logic on scroll vectors
         window.addEventListener('scroll', () => {
@@ -608,78 +602,82 @@
 
         const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzV0qldLBWAuVbsPCrbyE_Rc0tid2ogu8lTPdh72DeM270jUIbTsh1SQrvfziF0lgIq/exec";
 
-        // Prevent users from typing letters/special characters altogether
-        phoneInput.addEventListener('keypress', (e) => {
-            if (e.which < 48 || e.which > 57) {
-                e.preventDefault();
-            }
-        });
+        if(phoneInput) {
+            // Prevent users from typing letters/special characters altogether
+            phoneInput.addEventListener('keypress', (e) => {
+                if (e.which < 48 || e.which > 57) {
+                    e.preventDefault();
+                }
+            });
 
-        // Dynamic visual boundary indicator cleanup on user focus input
-        phoneInput.addEventListener('input', () => {
-            if (phoneInput.validity.valid) {
+            // Dynamic visual boundary indicator cleanup on user focus input
+            phoneInput.addEventListener('input', () => {
+                if (phoneInput.validity.valid) {
+                    errorMsg.classList.add('hidden');
+                    phoneInput.classList.remove('border-rose-400');
+                }
+            });
+        }
+
+        if(contactForm) {
+            // Form submission intercept with validation loop & asynchronous fetch post engine
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault(); // Stop native synchronous browser routing reload
+                
+                const phoneNumber = phoneInput.value;
+                const phoneRegex = /^[6-9]\d{9}$/;
+
+                // Check phone criteria matching parameter frameworks
+                if (!phoneRegex.test(phoneNumber)) {
+                    errorMsg.classList.remove('hidden');
+                    phoneInput.classList.add('border-rose-400');
+                    phoneInput.focus();
+                    return;
+                }
+
+                // Check standard field validity (HTML5 required attributes)
+                if (!contactForm.checkValidity()) {
+                    contactForm.reportValidity();
+                    return;
+                }
+
+                // Clean feedback presentation layer rules
                 errorMsg.classList.add('hidden');
                 phoneInput.classList.remove('border-rose-400');
-            }
-        });
+                feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-blue-950 text-blue-300 border border-blue-800";
+                feedbackContainer.innerHTML = "Processing request parameters securely...";
+                feedbackContainer.classList.remove('hidden');
 
-        // Form submission intercept with validation loop & asynchronous fetch post engine
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Stop native synchronous browser routing reload
-            
-            const phoneNumber = phoneInput.value;
-            const phoneRegex = /^[6-9]\d{9}$/;
+                // Disable submit mechanism during transaction lifespan
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = "0.7";
 
-            // Check phone criteria matching parameter frameworks
-            if (!phoneRegex.test(phoneNumber)) {
-                errorMsg.classList.remove('hidden');
-                phoneInput.classList.add('border-rose-400');
-                phoneInput.focus();
-                return;
-            }
+                // Map standard form context parameters natively
+                const formData = new FormData(contactForm);
 
-            // Check standard field validity (HTML5 required attributes)
-            if (!contactForm.checkValidity()) {
-                contactForm.reportValidity();
-                return;
-            }
-
-            // Clean feedback presentation layer rules
-            errorMsg.classList.add('hidden');
-            phoneInput.classList.remove('border-rose-400');
-            feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-blue-950 text-blue-300 border border-blue-800";
-            feedbackContainer.innerHTML = "Processing request parameters securely...";
-            feedbackContainer.classList.remove('hidden');
-
-            // Disable submit mechanism during transaction lifespan
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = "0.7";
-
-            // Map standard form context parameters natively
-            const formData = new FormData(contactForm);
-
-            // Transmit architecture payload safely using no-cors parameters
-            fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                body: formData
-            })
-            .then(() => {
-                feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-emerald-950 text-emerald-400 border border-emerald-800";
-                feedbackContainer.innerHTML = "Inquiry filed successfully. Financial analysts notified.";
-                contactForm.reset();
-            })
-            .catch(error => {
-                console.error('Transmission fault identified:', error);
-                feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-rose-950 text-rose-300 border border-rose-800";
-                feedbackContainer.innerHTML = "Transmission anomaly found. Please verify your script URL deployment settings.";
-            })
-            .finally(() => {
-                // Restore button functionality framework
-                submitBtn.disabled = false;
-                submitBtn.style.opacity = "1";
+                // Transmit architecture payload safely using no-cors parameters
+                fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                })
+                .then(() => {
+                    feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-emerald-950 text-emerald-400 border border-emerald-800";
+                    feedbackContainer.innerHTML = "Inquiry filed successfully. Financial analysts notified.";
+                    contactForm.reset();
+                })
+                .catch(error => {
+                    console.error('Transmission fault identified:', error);
+                    feedbackContainer.className = "text-sm font-semibold tracking-wide rounded-lg p-4 mt-4 bg-rose-950 text-rose-300 border border-rose-800";
+                    feedbackContainer.innerHTML = "Transmission anomaly found. Please verify your script URL deployment settings.";
+                })
+                .finally(() => {
+                    // Restore button functionality framework
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = "1";
+                });
             });
-        });
+        }
     });
 </script>
 </body>
